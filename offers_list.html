@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>يلا بينا - قائـمة العــروض</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+              >
+              <img src="images/en-logo.png" class="img-fluid d-none d-lg-block " alt=""
+            />
+            <img src="images/res_logo.png" class="img-fluid d-lg-none " alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close_mobile_menu d-lg-none bg-transparent border-0 ">
+              <img src="images/close.png" alt="">
+            </button>
+            <ul class="navbar-nav">
+              <div class="sidebar_header d-flex align-items-center d-lg-none justify-content-between ">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="img-container">
+                    <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                  </div>
+                  <div class="sidebar_header_text">
+                    <span>مرحبا بـك</span>
+                    <h6>محمـد مصـطفـي عـلـي</h6>
+                  </div>
+                </div>
+                <div class="nav-item dropdown d-lg-none ">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  <img src="images/langg.png" class="langg" alt="">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                    <li><a class="dropdown-item" href="#">عربي</a></li>
+                  </ul>
+                </div>
+              </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >
+                  <img src="images/mobileHome.png" class="home_mobile d-lg-none " alt="">
+                  الرئيسية
+                </a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html">
+                  <img src="images/mobileYalla.png" class="home_mobile d-lg-none " alt="">
+                  يلا بينا ؟</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="companyForUser.html">
+                  <img src="images/mobileProduct.png" class="home_mobile d-lg-none " alt="">
+                  الاقسام
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offers_list.html">
+                  <img src="images/mobileDeals.png" class="home_mobile d-lg-none " alt="">
+                  قائمة العروض
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="specific_producr.html">
+                  <img src="images/mobileDemand.png" class="home_mobile d-lg-none " alt="">
+                  اطلب منتج محدد
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">
+                  <img src="images/contact-mail.png" class="home_contact d-lg-none " alt="">
+                  تواصل معنا
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex nav-div justify-content-between">
+              <a href="notification.html" class="notcon d-none d-lg-block">
+                <img src="images/nav-notification.png" alt="">
+              </a>
+              <a href="myAccount.html" class="profile_owner d-none d-lg-flex">
+                <img src="images/header_vector.png" class="img-fluid " alt="">
+                <span>محمد مصطفي</span>
+              </a>
+              <a href="#" class="log_out d-flex d-lg-none align-items-center ">
+                <img src="images/Sign-out.png" class="img-fluid " alt="">
+                <span>تســجــيل الخروج</span>
+              </a>
+              <a href="#" class="delete_account  d-flex d-lg-none ">
+                <img src="images/deleteAccount.png" class="img-fluid " alt="">
+                <span>حذف الحساب</span>
+              </a>
+            </div>
+          </div>
+          <a href="notification.html" class="notif-icon d-lg-none " role="button">
+            <span><img src="images/header_not_mobile.png" class="img-fluid " alt="Vector"></span>
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light second-nav d-none d-lg-block ">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <div class="sidebar_header d-flex align-items-center d-lg-none justify-content-between ">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="img-container">
+                    <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                  </div>
+                  <div class="sidebar_header_text">
+                    <span>مرحبا بـك</span>
+                    <h6>محمـد مصـطفـي عـلـي</h6>
+                  </div>
+                </div>
+                <div class="nav-item dropdown d-lg-none ">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  <img src="images/langg.png" class="langg" alt="">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                    <li><a class="dropdown-item" href="#">عربي</a></li>
+                  </ul>
+                </div>
+              </div>
+              <li class="nav-item searcharea">
+                <input
+                  type="text"
+                  placeholder="ابــحــث عن اي منتج هــنــا...."
+                />
+                <span class="position-absolute"></span>
+                <div class="search-icon">
+                  <img src="images/searchbox.png" class="img-fluid" alt="" />
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الاجهـزة الكـبـيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الاجهـزة الـمنزلية الصغيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  اجهـزة الـمطبـخ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العلامات التجارية
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="flag">
+                    <img src="images/Egypt.png" class="img-fluid" alt="" />
+                  </div>
+                  <span>مصر</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">مصر</a></li>
+                  <li><a class="dropdown-item" href="#">كندا</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid account_content offer_lists default_off_list">
+      <a href="settings.html" class="prev_page d-lg-none"><img src="images/back.png" alt=""></a>
+        <div class="row">
+            <div class="col-12 col-lg-4 myAcoount_sidebar d-none d-lg-block ">
+                <h4 class="cotext">قائمة وبيانات حسابك وطلباتك</h4>
+                <div class="account_sidebar">
+                    <div class="sidebar_header d-flex align-items-center ">
+                        <div class="img-container">
+                            <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                        </div>
+                        <div class="sidebar_header_text">
+                            <span>مرحبا بـك</span>
+                            <h6>محمـد مصـطفـي عـلـي</h6>
+                        </div>
+                    </div>
+                    <ul class="sidebar_links">
+                        <li class="sidebar_item">
+                            <a href="myAccount.html" class="sidebar_link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0013 1.66602C8.90695 1.66602 7.82332 1.88156 6.81227 2.30035C5.80123 2.71914 4.88257 3.33297 4.10875 4.10679C2.54594 5.6696 1.66797 7.78921 1.66797 9.99935C1.66797 12.2095 2.54594 14.3291 4.10875 15.8919C4.88257 16.6657 5.80123 17.2796 6.81227 17.6983C7.82332 18.1171 8.90695 18.3327 10.0013 18.3327C12.2114 18.3327 14.3311 17.4547 15.8939 15.8919C17.4567 14.3291 18.3346 12.2095 18.3346 9.99935C18.3346 8.905 18.1191 7.82137 17.7003 6.81032C17.2815 5.79927 16.6677 4.88061 15.8939 4.10679C15.12 3.33297 14.2014 2.71914 13.1903 2.30035C12.1793 1.88156 11.0957 1.66602 10.0013 1.66602ZM5.89297 15.2327C6.2513 14.4827 8.43464 13.7493 10.0013 13.7493C11.568 13.7493 13.7513 14.4827 14.1096 15.2327C12.9425 16.1627 11.4937 16.6682 10.0013 16.666C8.4513 16.666 7.0263 16.1327 5.89297 15.2327ZM15.3013 14.0243C14.1096 12.5743 11.218 12.0827 10.0013 12.0827C8.78464 12.0827 5.89297 12.5743 4.7013 14.0243C3.81479 12.8699 3.33436 11.4549 3.33464 9.99935C3.33464 6.32435 6.3263 3.33268 10.0013 3.33268C13.6763 3.33268 16.668 6.32435 16.668 9.99935C16.668 11.516 16.1513 12.916 15.3013 14.0243ZM10.0013 4.99935C8.38463 4.99935 7.08464 6.29935 7.08464 7.91602C7.08464 9.53268 8.38463 10.8327 10.0013 10.8327C11.618 10.8327 12.918 9.53268 12.918 7.91602C12.918 6.29935 11.618 4.99935 10.0013 4.99935ZM10.0013 9.16602C9.66978 9.16602 9.35184 9.03432 9.11742 8.7999C8.883 8.56548 8.7513 8.24754 8.7513 7.91602C8.7513 7.5845 8.883 7.26655 9.11742 7.03213C9.35184 6.79771 9.66978 6.66602 10.0013 6.66602C10.3328 6.66602 10.6508 6.79771 10.8852 7.03213C11.1196 7.26655 11.2513 7.5845 11.2513 7.91602C11.2513 8.24754 11.1196 8.56548 10.8852 8.7999C10.6508 9.03432 10.3328 9.16602 10.0013 9.16602Z" fill="#5D686F"/>
+                                </svg>
+                                بيــانات حســابك
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="notification.html" class="sidebar_link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.59375 18H10.4062C10.7946 18 11.1094 17.6852 11.1094 17.2969C11.1094 16.9085 10.7946 16.5938 10.4062 16.5938H7.59375C7.20541 16.5938 6.89062 16.9085 6.89062 17.2969C6.89062 17.6852 7.20541 18 7.59375 18Z" fill="#5D686F"/>
+                                    <path d="M9 0C8.61166 0 8.29688 0.314789 8.29688 0.703125V1.4567C5.91486 1.79891 4.07812 3.85291 4.07812 6.32812V10.6508C4.07812 10.8986 3.9665 11.124 3.80043 11.2118C3.1043 11.5793 2.67188 12.2945 2.67188 13.0781C2.67188 14.2412 3.61814 15.1875 4.78125 15.1875H13.2188C14.3819 15.1875 15.3281 14.2412 15.3281 13.0781C15.3281 12.2945 14.8957 11.5793 14.1996 11.2118C14.0335 11.124 13.9219 10.8986 13.9219 10.6508V6.32812C13.9219 3.85291 12.0851 1.79891 9.70312 1.4567V0.703125C9.70312 0.314789 9.38834 0 9 0ZM12.5156 6.32812V10.6508C12.5156 11.4292 12.9093 12.1206 13.543 12.4553C13.7767 12.5787 13.9219 12.8173 13.9219 13.0781C13.9219 13.4658 13.6065 13.7812 13.2188 13.7812H4.78125C4.39355 13.7812 4.07812 13.4658 4.07812 13.0781C4.07812 12.8173 4.22332 12.5787 4.45704 12.4553C5.09073 12.1206 5.48438 11.4292 5.48438 10.6508V6.32812C5.48438 4.38961 7.06148 2.8125 9 2.8125C10.9385 2.8125 12.5156 4.38961 12.5156 6.32812Z" fill="#5D686F"/>
+                                </svg>
+                                الاشعارات
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="address_list.html" class="sidebar_link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.33333 13.334H13.3333M16.6667 5.00065V15.0007C16.6667 15.4427 16.4911 15.8666 16.1785 16.1792C15.866 16.4917 15.442 16.6673 15 16.6673H6.66667C6.22464 16.6673 5.80072 16.4917 5.48816 16.1792C5.17559 15.8666 5 15.4427 5 15.0007V5.00065C5 4.55862 5.17559 4.1347 5.48816 3.82214C5.80072 3.50958 6.22464 3.33398 6.66667 3.33398H15C15.442 3.33398 15.866 3.50958 16.1785 3.82214C16.4911 4.1347 16.6667 4.55862 16.6667 5.00065Z" stroke="#5D686F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.33203 6.66797H5.83203M3.33203 10.0013H5.83203M3.33203 13.3346H5.83203M9.16536 9.16797C9.16536 9.61 9.34096 10.0339 9.65352 10.3465C9.96608 10.659 10.39 10.8346 10.832 10.8346C11.2741 10.8346 11.698 10.659 12.0105 10.3465C12.3231 10.0339 12.4987 9.61 12.4987 9.16797C12.4987 8.72594 12.3231 8.30202 12.0105 7.98946C11.698 7.6769 11.2741 7.5013 10.832 7.5013C10.39 7.5013 9.96608 7.6769 9.65352 7.98946C9.34096 8.30202 9.16536 8.72594 9.16536 9.16797Z" stroke="#5D686F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                قائـمة العـناويـن الخاصـة بي
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="offers_list.html" class="sidebar_link active ">
+                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.19083 1.11586C7.43837 0.978387 7.71685 0.90625 8 0.90625C8.28315 0.90625 8.56163 0.978387 8.80917 1.11586L15.0717 4.59419C15.2015 4.66639 15.3097 4.77199 15.385 4.90004C15.4603 5.0281 15.5 5.17396 15.5 5.32252V12.185C15.4999 12.4822 15.4204 12.774 15.2696 13.0301C15.1188 13.2863 14.9023 13.4974 14.6425 13.6417L8.80917 16.8834C8.56163 17.0208 8.28315 17.093 8 17.093C7.71685 17.093 7.43837 17.0208 7.19083 16.8834L1.3575 13.6417C1.0978 13.4975 0.88136 13.2865 0.730595 13.0305C0.579831 12.7745 0.500219 12.4829 0.5 12.1859V5.32252C0.499994 5.17396 0.539702 5.0281 0.615013 4.90004C0.690323 4.77199 0.798497 4.66639 0.928333 4.59419L7.19083 1.11586Z" stroke="#5D686F" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M0.5 4.83203L8 8.9987M8 8.9987L15.5 4.83203M8 8.9987V17.332" stroke="#5D686F" stroke-linejoin="round"/>
+                                    <path d="M4.25 6.91667L11.75 2.75M3 9.27333L5.5 10.6667" stroke="#5D686F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                قائـمة العــروض الخاصة بي
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="prefered_offers.html" class="sidebar_link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0846 15.4583L10.0013 15.5417L9.90964 15.4583C5.9513 11.8667 3.33464 9.49167 3.33464 7.08333C3.33464 5.41667 4.58464 4.16667 6.2513 4.16667C7.53464 4.16667 8.78464 5 9.2263 6.13333H10.7763C11.218 5 12.468 4.16667 13.7513 4.16667C15.418 4.16667 16.668 5.41667 16.668 7.08333C16.668 9.49167 14.0513 11.8667 10.0846 15.4583ZM13.7513 2.5C12.3013 2.5 10.9096 3.175 10.0013 4.23333C9.09297 3.175 7.7013 2.5 6.2513 2.5C3.68464 2.5 1.66797 4.50833 1.66797 7.08333C1.66797 10.225 4.5013 12.8 8.79297 16.6917L10.0013 17.7917L11.2096 16.6917C15.5013 12.8 18.3346 10.225 18.3346 7.08333C18.3346 4.50833 16.318 2.5 13.7513 2.5Z" fill="#5D686F"/>
+                                </svg>
+                                العروض المفضلة
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="wallet.html" class="sidebar_link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.2944 4.95897C17.6826 4.95897 17.9974 4.64422 17.9974 4.25595V3.51777C17.9974 1.57807 16.4193 0 14.4796 0C14.4796 0 3.45944 0.0016521 3.43227 0.00485084C2.50467 0.0372601 1.61362 0.43531 0.971344 1.10831C0.313 1.79812 -0.0302148 2.69531 0.00208902 3.63929C0.000753281 3.65718 5.02601e-05 13.7792 5.02601e-05 13.7792C5.02601e-05 16.1066 1.8935 18 4.22085 18H14.4796C16.4193 18 17.9974 16.4219 17.9974 14.4822V9.14461C17.9974 7.20491 16.4193 5.62684 14.4796 5.62684H3.51512C2.38638 5.62684 1.461 4.74462 1.40838 3.61838C1.38163 3.0457 1.58765 2.49903 1.98844 2.07904C2.39503 1.65301 2.96606 1.40871 3.55505 1.40871C3.57582 1.40871 14.4795 1.40604 14.4795 1.40604C15.6439 1.40604 16.5913 2.35336 16.5913 3.51777V4.25595C16.5913 4.64422 16.9061 4.95897 17.2944 4.95897ZM3.51512 7.03288H14.4796C15.644 7.03288 16.5913 7.9802 16.5913 9.14461V14.4822C16.5913 15.6466 15.644 16.594 14.4796 16.594H4.22085C2.66879 16.594 1.40609 15.3313 1.40609 13.7792V6.33271C1.9941 6.77315 2.72471 7.03288 3.51512 7.03288ZM15.1853 11.8134C15.1853 12.2987 14.7919 12.6922 14.3065 12.6922C13.1408 12.6459 13.1412 10.9808 14.3065 10.9346C14.7919 10.9346 15.1853 11.3281 15.1853 11.8134ZM15.1853 3.51777C15.1853 3.1295 14.8706 2.81475 14.4823 2.81475H3.51515C2.58239 2.85187 2.58309 4.18399 3.51515 4.2208H14.4823C14.8705 4.2208 15.1853 3.90605 15.1853 3.51777Z" fill="#5D686F"/>
+                                </svg>
+                                المحفظة
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="specific_producr.html" class="sidebar_link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6563 8.4375C11.8219 8.4375 11.0062 8.68493 10.3125 9.14849C9.61869 9.61205 9.07796 10.2709 8.75865 11.0418C8.43935 11.8127 8.3558 12.6609 8.51858 13.4793C8.68136 14.2976 9.08316 15.0494 9.67316 15.6394C10.2632 16.2294 11.0149 16.6312 11.8332 16.7939C12.6516 16.9567 13.4998 16.8732 14.2707 16.5539C15.0416 16.2346 15.7005 15.6938 16.164 15.0001C16.6276 14.3063 16.875 13.4906 16.875 12.6562C16.875 11.5374 16.4305 10.4643 15.6394 9.67314C14.8482 8.88197 13.7752 8.4375 12.6563 8.4375ZM12.6563 15.75C12.0444 15.75 11.4462 15.5686 10.9375 15.2286C10.4287 14.8887 10.0322 14.4055 9.79802 13.8402C9.56386 13.2749 9.50259 12.6528 9.62197 12.0527C9.74134 11.4526 10.036 10.9013 10.4687 10.4686C10.9013 10.036 11.4526 9.74132 12.0527 9.62195C12.6528 9.50257 13.2749 9.56384 13.8402 9.798C14.4055 10.0322 14.8887 10.4287 15.2286 10.9375C15.5686 11.4462 15.75 12.0444 15.75 12.6562C15.75 13.4768 15.4241 14.2637 14.8439 14.8439C14.2637 15.4241 13.4768 15.75 12.6563 15.75ZM13.6519 10.8675L14.445 11.6606L11.6606 14.445L10.8675 13.6519L13.6519 10.8675ZM13.2188 13.5H14.3438V14.625H13.2188V13.5ZM12.0938 11.8125H10.9688V10.6875H12.0938V11.8125ZM6.18752 8.36438C6.27303 8.41374 6.37003 8.43974 6.46877 8.43974C6.56751 8.43974 6.66451 8.41374 6.75002 8.36438L7.87502 7.695L9.00002 8.36438C9.08575 8.41296 9.18273 8.43818 9.28127 8.4375C9.37971 8.43741 9.47651 8.41225 9.56252 8.36438C9.64836 8.31482 9.71958 8.24345 9.76897 8.15752C9.81836 8.07158 9.84416 7.97412 9.84377 7.875V5.0625H13.5V7.875H14.625V4.5C14.6249 4.41279 14.6037 4.3269 14.5631 4.24969L13.4663 2.05875C13.3266 1.77898 13.1119 1.54352 12.8463 1.37864C12.5806 1.21376 12.2743 1.12595 11.9616 1.125H3.78846C3.47529 1.12543 3.16841 1.213 2.90217 1.3779C2.63594 1.54281 2.42084 1.77855 2.28096 2.05875L1.18408 4.24969C1.14452 4.32715 1.12426 4.41302 1.12502 4.5V12.9375C1.12502 13.3851 1.30281 13.8143 1.61928 14.1307C1.93575 14.4472 2.36497 14.625 2.81252 14.625H7.87502V13.5H2.81252C2.66334 13.5 2.52026 13.4407 2.41477 13.3352C2.30928 13.2298 2.25002 13.0867 2.25002 12.9375V5.0625H5.90627V7.875C5.90588 7.97412 5.93168 8.07158 5.98107 8.15752C6.03046 8.24345 6.10168 8.31482 6.18752 8.36438ZM8.71877 6.88219L8.15627 6.55031C8.06878 6.49775 7.96864 6.46998 7.86658 6.46998C7.76452 6.46998 7.66438 6.49775 7.5769 6.55031L7.0144 6.88219V5.0625H8.7019L8.71877 6.88219ZM3.78846 2.25H11.9616C12.0662 2.25006 12.1688 2.2793 12.2577 2.33445C12.3467 2.3896 12.4185 2.46847 12.465 2.56219L13.1513 3.9375H2.59877L3.28502 2.56219C3.33159 2.46847 3.40338 2.3896 3.49231 2.33445C3.58125 2.2793 3.68381 2.25006 3.78846 2.25Z" fill="#5D686F"/>
+                                </svg>
+                                اطلب منتج محدد
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="seller_account.html" class="sidebar_link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.92 13.22C17.1378 13.0653 17.3057 12.8505 17.4034 12.6019C17.5011 12.3533 17.5242 12.0816 17.47 11.82L17.19 10.5C17.1095 10.2062 16.9327 9.94794 16.6879 9.76662C16.4431 9.5853 16.1445 9.49141 15.84 9.5H11.605C11.3009 9.49076 11.0027 9.5845 10.7585 9.766C10.5144 9.94751 10.3387 10.2062 10.26 10.5L10 11.82C9.94604 12.0823 9.96927 12.3546 10.0669 12.604C10.1645 12.8533 10.3323 13.069 10.55 13.225L10.215 14.775C10.1463 15.1015 10.1508 15.4391 10.228 15.7636C10.3053 16.0881 10.4534 16.3915 10.6618 16.652C10.8702 16.9125 11.1337 17.1237 11.4334 17.2703C11.733 17.4169 12.0614 17.4953 12.395 17.5H15.06C15.395 17.4974 15.7252 17.4205 16.0268 17.2749C16.3285 17.1292 16.5941 16.9185 16.8046 16.6579C17.015 16.3972 17.165 16.0932 17.2437 15.7676C17.3225 15.442 17.328 15.103 17.26 14.775L16.92 13.22ZM16.21 10.72L16.49 12.02C16.5078 12.1274 16.4855 12.2377 16.4275 12.3298C16.3694 12.422 16.2796 12.4896 16.175 12.52C16.0942 12.5567 16.0065 12.5759 15.9177 12.5764C15.829 12.5768 15.7411 12.5585 15.6599 12.5226C15.5787 12.4867 15.506 12.4341 15.4465 12.3682C15.3871 12.3022 15.3423 12.2245 15.315 12.14C15.28 11.74 15.2 10.905 15.16 10.505C15.395 10.525 16.15 10.39 16.21 10.73V10.72ZM13.155 12.085C13.155 11.925 13.295 10.585 13.305 10.49H14.145C14.175 10.805 14.265 11.755 14.3 12.085V12.12C14.27 12.71 13.12 12.69 13.155 12.095V12.085ZM11.235 10.72C11.305 10.37 12.05 10.52 12.3 10.49C12.3 10.54 12.155 12.03 12.145 12.125C12.1173 12.2097 12.0719 12.2875 12.0119 12.3534C11.9519 12.4192 11.8786 12.4716 11.7968 12.507C11.7151 12.5425 11.6268 12.5602 11.5377 12.559C11.4486 12.5578 11.3608 12.5377 11.28 12.5C11.1745 12.4706 11.0835 12.4034 11.0244 12.3112C10.9654 12.2189 10.9425 12.1081 10.96 12L11.235 10.72ZM16.03 16.025C15.9136 16.1704 15.766 16.2877 15.598 16.3682C15.4301 16.4487 15.2462 16.4903 15.06 16.49H12.395C12.2102 16.4883 12.028 16.4459 11.8615 16.3659C11.6949 16.2859 11.5479 16.1702 11.431 16.0271C11.3141 15.8839 11.2301 15.7168 11.185 15.5376C11.1399 15.3584 11.1348 15.1714 11.17 14.99L11.5 13.56C11.9235 13.575 12.3379 13.4345 12.665 13.165C12.9692 13.4175 13.3521 13.5557 13.7475 13.5557C14.1429 13.5557 14.5258 13.4175 14.83 13.165C15.156 13.4324 15.5687 13.5711 15.99 13.555C16.07 14.245 16.605 15.44 16.03 16.035V16.025ZM10 17C10 17.1326 9.94732 17.2598 9.85355 17.3536C9.75979 17.4473 9.63261 17.5 9.5 17.5H4.5C4.23478 17.5 3.98043 17.3946 3.79289 17.2071C3.60536 17.0196 3.5 16.7652 3.5 16.5V13.5C3.50534 12.624 3.71889 11.7619 4.12303 10.9847C4.52717 10.2075 5.11031 9.53755 5.82435 9.03011C6.53838 8.52266 7.36285 8.19227 8.22971 8.0662C9.09658 7.94012 9.981 8.02197 10.81 8.305C10.9228 8.35556 11.0128 8.44608 11.0628 8.55911C11.1127 8.67214 11.1191 8.79967 11.0805 8.9171C11.042 9.03452 10.9614 9.13352 10.8542 9.19499C10.747 9.25647 10.6208 9.27606 10.5 9.25C9.82067 9.00982 9.0936 8.93628 8.37994 9.03556C7.66628 9.13484 6.98689 9.40405 6.39892 9.82053C5.81094 10.237 5.33157 10.7886 5.00113 11.4289C4.67068 12.0692 4.49882 12.7795 4.5 13.5V16.5H9.5C9.63261 16.5 9.75979 16.5527 9.85355 16.6464C9.94732 16.7402 10 16.8674 10 17ZM9 7.5C13.625 7.355 13.625 0.645 9 0.5C4.375 0.645 4.375 7.355 9 7.5ZM9 1.5C12.305 1.605 12.305 6.395 9 6.5C5.695 6.395 5.695 1.605 9 1.5Z" fill="#5D686F"/>
+                                </svg>
+                                حساب الشركة (البائع)
+                            </a>
+                        </li>
+                        <li class="sidebar_item">
+                            <a href="support.html" class="sidebar_link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2302_20106)">
+                                    <path d="M15.5059 7.44059H15.4613V6.34901C15.4613 2.84255 12.6188 0 9.11233 0C5.60583 0 2.76332 2.84255 2.76332 6.34901V7.44059H2.49601C1.51581 7.44059 0.758392 8.30938 0.758392 9.31189V12.0965C0.733703 13.0682 1.50139 13.8759 2.47303 13.9005C2.48071 13.9008 2.48834 13.9009 2.49601 13.901H4.14452C4.37801 13.89 4.55842 13.6918 4.54742 13.4583C4.54704 13.4499 4.5464 13.4415 4.5455 13.4331V7.97521C4.5455 7.7079 4.38957 7.44055 4.14452 7.44055H3.65441V6.34897C3.65441 3.33466 6.09803 0.891048 9.11233 0.891048C12.1266 0.891048 14.5702 3.33466 14.5702 6.34897V7.44055H14.0801C13.8351 7.44055 13.6792 7.70786 13.6792 7.97521V13.4331C13.6543 13.6656 13.8226 13.8742 14.055 13.899C14.0633 13.8999 14.0717 13.9005 14.0801 13.9009H14.5925L14.5479 13.9677C13.8795 14.8562 12.8305 15.3765 11.7187 15.3712C11.4754 14.1778 10.3105 13.4075 9.11706 13.651C8.09648 13.8591 7.36064 14.7529 7.35241 15.7945C7.3646 17.0161 8.35846 18 9.58013 17.9999C10.1849 17.9901 10.7613 17.7419 11.1841 17.3093C11.4693 17.0172 11.6562 16.6434 11.7187 16.24C13.111 16.2453 14.424 15.5929 15.2608 14.4801L15.6841 13.8563C16.642 13.7895 17.2435 13.188 17.2435 12.3192V9.53456C17.2435 8.57673 16.5307 7.44059 15.5059 7.44059ZM3.65441 13.0099H2.49601C2.01631 12.9982 1.6369 12.5999 1.64859 12.1202C1.6488 12.1123 1.6491 12.1044 1.64948 12.0965V9.31185C1.64948 8.79949 2.00591 8.33164 2.49601 8.33164H3.65441V13.0099ZM10.5381 16.6856C10.2912 16.9533 9.94432 17.1066 9.58018 17.1089C8.85538 17.0974 8.26721 16.519 8.24354 15.7945C8.24324 15.0686 8.83146 14.4799 9.55736 14.4796C10.2833 14.4793 10.872 15.0676 10.8723 15.7935C10.8723 15.7938 10.8723 15.7942 10.8723 15.7945C10.8908 16.1253 10.7695 16.4486 10.5381 16.6856ZM16.3524 12.3193C16.3524 12.9208 15.7732 13.0099 15.5059 13.0099H14.5702V8.33168H15.5059C15.996 8.33168 16.3524 9.02228 16.3524 9.53464V12.3193Z" fill="#5D686F"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2302_20106">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                احصل علي الدعم
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sidebar_footer d-flex align-items-center justify-content-between ">
+                        <a href="#" class="log_out">
+                            <img src="images/Sign-out.png" class="img-fluid " alt="">
+                            <span>تســجــيل الخروج</span>
+                        </a>
+                        <a href="#" class="delete_account">
+                            <img src="images/deleteAccount.png" class="img-fluid " alt="">
+                            <span>حذف الحساب</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 myAccount_content your_offers">
+                <div class="row mb-24 d-lg-flex align-items-center ">
+                    <div class="col-12 col-lg-6">
+                        <h6>قائمة العروض الخاصة بك</h6>
+                    </div>
+                    <div class="col-12 col-lg-6 ">
+                        <div class="searcharea">
+                            <input type="text" placeholder="البحث في قائمة العروض الخاصة بي...">
+                            <span class="position-absolute"></span>
+                            <div class="search-icon">
+                              <img src="images/searchbox.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="filter-icon position-absolute ">
+                                <img src="images/searchFilter.png" class="img-fluid " alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row reset_slide">
+                    <div class="col-6">
+                        <div class="slide-one closed-offer">
+                            <div class="slide-one-header main d-flex justify-content-center position-relative ">
+                              <span class="smtext position-absolute remainingtime">الوقت المتبقي:</span>
+                              <div class="product-time d-flex">
+                                <div class="ptime-item">
+                                  <div class="ptimenum">6</div>
+                                  <div class="smbtext">يوم</div>
+                                </div>
+                                <div class="ptime-item">
+                                  <div class="ptimenum">16</div>
+                                  <div class="smbtext">ساعة</div>
+                                </div>
+                                <div class="ptime-item">
+                                  <div class="ptimenum">55</div>
+                                  <div class="smbtext">دقيقة</div>
+                                </div>
+                              </div>
+                              <div class="offer_status closed position-absolute ">
+                                عرض مغلق
+                              </div>
+                            </div>
+                            <div class="sitem-content">
+                              <div class="slide-pic">
+                                <div class="sl_img_co fr"> <img src="images/alike2.png" class="img-fluid" alt="" /></div>
+                                <h4>ثلاجة ال جي بابين ذات واجهة ذكي...</h4>
+                                <div class="d-flex">
+                                  <div class="companylogo">
+                                    <img
+                                      src="images/pngtree-star-logo-and-symbols-template-vector-icon-illustration-design-png-image_5121334 1.png"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="product-owner">شركة الرواد التجارية</div>
+                                    <div class="smtext">البائع</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="deal d-flex align-items-center justify-content-between w-100"
+                                >
+                                  <div><span class="brand">الصفقة:</span> <span class="inner"><b>(8)</b> تكيفات</span></div>
+                                  <div class="brand">
+                                    العلامة: <img src="images/LG_logo_(2015).png" class="mrka">
+                                  </div>
+                                </div>
+                                <div class="offer-price">
+                                  <span class="smtext">سعر العرض:</span>
+                                  <span class="sitem-price">65,000 ج.م</span>
+                                  <span class="smtext">(للجهاز داخل العرض)</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span class="smtext">السعر الاصلي:</span><span>65,000 ج.م</span>
+                                </div>
+                                <div class="offer_date">
+                                    <span class="smtext">تاريخ الاشتراك في العرض:</span><span> 15/3/2024</span>
+                                </div>
+                                <a href="#" class="main-blue-btn d-flex align-items-center justify-content-center ">
+                                  <span
+                                    ><img
+                                      src="images/offerdetails.png"
+                                      class="img-fluid detailsIcon"
+                                      alt=""
+                                  /></span>
+                                  <span>تفاصيل العرض</span>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="slide-one">
+                            <div class="slide-one-header aqua d-flex justify-content-center position-relative ">
+                              <span class="smtext position-absolute remainingtime">الوقت المتبقي:</span>
+                              <div class="product-time d-flex">
+                                <div class="ptime-item">
+                                  <div class="ptimenum">6</div>
+                                  <div class="smbtext">يوم</div>
+                                </div>
+                                <div class="ptime-item">
+                                  <div class="ptimenum">16</div>
+                                  <div class="smbtext">ساعة</div>
+                                </div>
+                                <div class="ptime-item">
+                                  <div class="ptimenum">55</div>
+                                  <div class="smbtext">دقيقة</div>
+                                </div>
+                              </div>
+                              <div class="offer_status opened position-absolute ">
+                                عرض مفتوح
+                              </div>
+                            </div>
+                            <div class="sitem-content">
+                              <div class="slide-pic">
+                                <div class="sl_img_co con">
+                                  <img src="images/slider.png" class="img-fluid" alt="" />
+                                </div>
+                                <h4>تكييف ال جي 2 حصان انفرتر في بلو...</h4>
+                                <div class="d-flex">
+                                  <div class="companylogo">
+                                    <img
+                                      src="images/pngtree-star-logo-and-symbols-template-vector-icon-illustration-design-png-image_5121334 1.png"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="product-owner">شركة الرواد التجارية</div>
+                                    <div class="smtext">البائع</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="deal d-flex align-items-center justify-content-between w-100"
+                                >
+                                  <div><span class="brand">الصفقة:</span> <span class="inner"><b>(8)</b> تكيفات</span></div>
+                                  <div class="brand">
+                                    العلامة: <img src="images/LG_logo_(2015).png" class="mrka">
+                                  </div>
+                                </div>
+                                <div class="offer-price">
+                                  <span class="smtext">سعر العرض:</span>
+                                  <span class="sitem-price">65,000 ج.م</span>
+                                  <span class="smtext">(للجهاز داخل العرض)</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span class="smtext">السعر الاصلي:</span><span>65,000 ج.م</span>
+                                </div>
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 50%"
+                                    aria-valuenow="50"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>50%</span>
+                                  </div>
+                                </div>
+                                <div class="rserved d-flex align-items-center">
+                                  <div class="reservedPeople d-flex align-items-center">
+                                    <img src="images/Ellipse 1220.png" alt="" />
+                                    <img src="images/Ellipse 1221.png" alt="" />
+                                    <img src="images/Ellipse 1222.png" alt="" />
+                                    <img src="images/Ellipse 1223.png" alt="" />
+                                  </div>
+                                  <span class="smbtext"
+                                    >عدد الاجهزة المحجوزة داخل العرض (4) - متبقي(4)</span
+                                  >
+                                </div>
+                                <a href="#" class="main-blue-btn d-flex align-items-center justify-content-center ">
+                                  <span
+                                    ><img
+                                      src="images/offerdetails.png"
+                                      class="img-fluid detailsIcon"
+                                      alt=""
+                                  /></span>
+                                  <span>تفاصيل العرض</span>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="slide-one">
+                          <div class="slide-one-header aqua d-flex justify-content-center position-relative ">
+                            <span class="smtext position-absolute remainingtime">الوقت المتبقي:</span>
+                            <div class="product-time d-flex">
+                              <div class="ptime-item">
+                                <div class="ptimenum">6</div>
+                                <div class="smbtext">يوم</div>
+                              </div>
+                              <div class="ptime-item">
+                                <div class="ptimenum">16</div>
+                                <div class="smbtext">ساعة</div>
+                              </div>
+                              <div class="ptime-item">
+                                <div class="ptimenum">55</div>
+                                <div class="smbtext">دقيقة</div>
+                              </div>
+                            </div>
+                            <div class="offer_status opened position-absolute ">
+                              عرض مفتوح
+                            </div>
+                          </div>
+                          <div class="sitem-content">
+                            <div class="slide-pic">
+                              <div class="sl_img_co fr">
+                                <img src="images/alike.png" class="img-fluid" alt="" />
+                              </div>
+                              <h4>تكييف ال جي 2 حصان انفرتر في بلو...</h4>
+                              <div class="d-flex">
+                                <div class="companylogo">
+                                  <img
+                                    src="images/pngtree-star-logo-and-symbols-template-vector-icon-illustration-design-png-image_5121334 1.png"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <div class="product-owner">شركة الرواد التجارية</div>
+                                  <div class="smtext">البائع</div>
+                                </div>
+                              </div>
+                              <div
+                                class="deal d-flex align-items-center justify-content-between w-100"
+                              >
+                                <div><span class="brand">الصفقة:</span> <span class="inner"><b>(8)</b> تكيفات</span></div>
+                                <div class="brand">
+                                  العلامة: <img src="images/LG_logo_(2015).png" class="mrka">
+                                </div>
+                              </div>
+                              <div class="offer-price">
+                                <span class="smtext">سعر العرض:</span>
+                                <span class="sitem-price">65,000 ج.م</span>
+                                <span class="smtext">(للجهاز داخل العرض)</span>
+                              </div>
+                              <div class="d-flex align-items-center gap-2">
+                                <span class="smtext">السعر الاصلي:</span><span>65,000 ج.م</span>
+                              </div>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style="width: 50%"
+                                  aria-valuenow="50"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span>50%</span>
+                                </div>
+                              </div>
+                              <div class="rserved d-flex align-items-center">
+                                <div class="reservedPeople d-flex align-items-center">
+                                  <img src="images/Ellipse 1220.png" alt="" />
+                                  <img src="images/Ellipse 1221.png" alt="" />
+                                  <img src="images/Ellipse 1222.png" alt="" />
+                                  <img src="images/Ellipse 1223.png" alt="" />
+                                </div>
+                                <span class="smbtext"
+                                  >عدد الاجهزة المحجوزة داخل العرض (4) - متبقي(4)</span
+                                >
+                              </div>
+                              <a href="#" class="main-blue-btn d-flex align-items-center justify-content-center ">
+                                <span
+                                  ><img
+                                    src="images/offerdetails.png"
+                                    class="img-fluid detailsIcon"
+                                    alt=""
+                                /></span>
+                                <span>تفاصيل العرض</span>
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="col-6">
+                        <div class="slide-one closed-offer">
+                            <div class="slide-one-header yellow d-flex justify-content-center position-relative ">
+                              <span class="smtext position-absolute remainingtime">الوقت المتبقي:</span>
+                              <div class="product-time d-flex">
+                                <div class="ptime-item">
+                                  <div class="ptimenum">6</div>
+                                  <div class="smbtext">يوم</div>
+                                </div>
+                                <div class="ptime-item">
+                                  <div class="ptimenum">16</div>
+                                  <div class="smbtext">ساعة</div>
+                                </div>
+                                <div class="ptime-item">
+                                  <div class="ptimenum">55</div>
+                                  <div class="smbtext">دقيقة</div>
+                                </div>
+                              </div>
+                              <div class="offer_status closed position-absolute ">
+                                عرض مغلق
+                              </div>
+                            </div>
+                            <div class="sitem-content">
+                              <div class="slide-pic">
+                                <div class="sl_img_co fr">
+                                  <img src="images/alike2.png" class="img-fluid" alt="">
+                                </div>
+                                <h4>تكييف ال جي 2 حصان انفرتر في بلو...</h4>
+                                <div class="d-flex">
+                                  <div class="companylogo">
+                                    <img
+                                      src="images/pngtree-star-logo-and-symbols-template-vector-icon-illustration-design-png-image_5121334 1.png"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <div class="product-owner">شركة الرواد التجارية</div>
+                                    <div class="smtext">البائع</div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="deal d-flex align-items-center justify-content-between w-100"
+                                >
+                                  <div><span class="brand">الصفقة:</span> <span class="inner"><b>(8)</b> تكيفات</span></div>
+                                  <div class="brand">
+                                    العلامة: <img src="images/LG_logo_(2015).png" class="mrka">
+                                  </div>
+                                </div>
+                                <div class="offer-price">
+                                  <span class="smtext">سعر العرض:</span>
+                                  <span class="sitem-price">65,000 ج.م</span>
+                                  <span class="smtext">(للجهاز داخل العرض)</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span class="smtext">السعر الاصلي:</span><span>65,000 ج.م</span>
+                                </div>
+                                <div class="offer_date">
+                                    <span class="smtext">تاريخ الاشتراك في العرض:</span><span> 15/3/2024</span>
+                                </div>
+                                <a href="#" class="main-blue-btn d-flex align-items-center justify-content-center ">
+                                  <span
+                                    ><img
+                                      src="images/offerdetails.png"
+                                      class="img-fluid detailsIcon"
+                                      alt=""
+                                  /></span>
+                                  <span>تفاصيل العرض</span>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_footer d-md-none ">
+      <div class="mobile_nav position-relative">
+        <svg width="100%" height="98" viewBox="0 0 430 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute z-1 ">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M370.966 17.0943C376.158 8.51344 383.97 0 394 0C413.882 0 430 16.1177 430 36V83C430 91.2843 423.284 98 415 98H15C6.71573 98 0 91.2843 0 83V36C0 16.1178 16.1177 0 36 0H280.733C294.809 0 305.806 12.5904 315.411 22.879C321.799 29.7219 330.9 34 341 34C353.708 34 364.834 27.2272 370.966 17.0943Z" fill="white"></path>
+        </svg>
+        <ul class="d-flex align-items-center justify-content-between text-center position-relative z-3 ">
+          <li><a href="index.html" class="active"><span><img src="images/home-2.png" alt=""></span><p>بيت</p></a></li>
+          <li><a href="search.html"><span><img src="images/search-normal.png" alt=""></span><p>بحث</p></a></li>
+          <li><a href="prefered_offers.html" class="hearted"><span><img src="images/navbar (2).png" alt=""></span><p>مفضل</p></a></li>
+          <li><a href="settings.html"><span><img src="images/user.png" alt=""></span><p>حساب تعريفي</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

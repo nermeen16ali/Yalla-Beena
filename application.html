@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء عرض بيع</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tele.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/en-logo.png" class="img-fluid d-none d-lg-block" alt="">
+           <img src="images/res_logo.png" class="img-fluid d-lg-none " alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close_mobile_menu d-lg-none bg-transparent border-0 ">
+              <img src="images/close.png" alt="">
+            </button>
+            <ul class="navbar-nav">
+              <div class="sidebar_header d-flex align-items-center d-lg-none justify-content-between ">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="img-container">
+                    <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                  </div>
+                  <div class="sidebar_header_text">
+                    <span>مرحبا بـك</span>
+                    <h6>محمـد مصـطفـي عـلـي</h6>
+                  </div>
+                </div>
+                <div class="nav-item dropdown d-lg-none ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/langg.png" class="langg" alt="">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                    <li><a class="dropdown-item" href="#">عربي</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <img src="images/mobileHome.png" class="home_mobile d-lg-none " alt="">
+                  الرئيسية
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html">
+                  <img src="images/mobileYalla.png" class="home_mobile d-lg-none " alt="">
+                  يلا بينا ؟</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="companyForUser.html">
+                  <img src="images/mobileProduct.png" class="home_mobile d-lg-none " alt="">
+                  الاقسام
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offers_list.html">
+                  <img src="images/mobileDeals.png" class="home_mobile d-lg-none " alt="">
+                  قائمة العروض
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="specific_producr.html">
+                  <img src="images/mobileDemand.png" class="home_mobile d-lg-none " alt="">
+                  اطلب منتج محدد
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">
+                  <img src="images/contact-mail.png" class="home_contact d-lg-none " alt="">
+                  تواصل معنا
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <a href="#" class="log_out d-flex d-lg-none align-items-center ">
+                <img src="images/Sign-out.png" class="img-fluid " alt="">
+                <span>تســجــيل الخروج</span>
+              </a>
+              <a href="#" class="delete_account  d-flex d-lg-none ">
+                <img src="images/deleteAccount.png" class="img-fluid " alt="">
+                <span>حذف الحساب</span>
+              </a>
+              <a href="login.html" class="alt-btn d-none d-lg-block">
+                تسجيل الدخول
+              </a>
+              <a href="create_account.html" class="main-btn d-none d-lg-block">تسجيل حساب</a>
+            </div>
+          </div>
+          <a href="notification.html" class="notif-icon d-lg-none " role="button">
+            <span><img src="images/header_not_mobile.png" class="img-fluid " alt="Vector"></span>
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light second-nav d-none d-lg-block">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item searcharea">
+                <input type="text" placeholder="ابــحــث عن اي منتج هــنــا....">
+                <span class="position-absolute"></span>
+                <div class="search-icon">
+                  <img src="images/searchbox.png" class="img-fluid" alt="">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  الاجهـزة الكـبـيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  الاجهـزة الـمنزلية الصغيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  اجهـزة الـمطبـخ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  العلامات التجارية
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="flag">
+                    <img src="images/Egypt.png" class="img-fluid" alt="">
+                  </div>
+                  <span>مصر</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">مصر</a></li>
+                  <li><a class="dropdown-item" href="#">كندا</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form action="" method="" class="deal-wrapper application_deal_wrapper" id="myForm">
+        <div class="container-fluid">
+            <h4>التقديم علي حساب شركة (بائع) في منصة يلا بينا</h4>
+            <div class="deal-step deal_step_one active">
+              <ul class="steps-progress d-flex align-items-center">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">بيانات الشركة</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">عنوان الشركة</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">التواصل</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">اوراق شركتك</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                    <span class="form-label">لوجو الشركة</span>
+                    <div class="companyLogo">
+                        <label for="company_logo" role="button" class="upload-img d-flex flex-column align-items-center justify-content-center "><img src="images/uploadImg.png" class="img-fluid " alt=""><span>ارفاق صورة منتج</span></label>
+                        <input id="company_logo" type="file" name="" class="d-none upload-product-img">
+                    </div>
+                    <div class="wrapper-form-group">
+                        <span class="form-label"> اسم الشركة</span>
+                        <input type="text" class="form-control" placeholder="اسم شركتك">
+                    </div>
+                    <div class="wrapper-form-group">
+                        <span class="form-label">البلد</span>
+                        <select class="form-control form-select">
+                            <option value="Afghanistan">اختر البلد</option>
+                            <option value="Åland Islands">Åland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote D'ivoire">Cote D'ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Territories">French Southern Territories</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guernsey">Guernsey</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-bissau">Guinea-bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                            <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jersey">Jersey</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                            <option value="Korea, Republic of">Korea, Republic of</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macao">Macao</option>
+                            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                            <option value="Moldova, Republic of">Moldova, Republic of</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Netherlands Antilles">Netherlands Antilles</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Pitcairn">Pitcairn</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Helena">Saint Helena</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                            <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-leste">Timor-leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Viet Nam">Viet Nam</option>
+                            <option value="Virgin Islands, British">Virgin Islands, British</option>
+                            <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                            <option value="Wallis and Futuna">Wallis and Futuna</option>
+                            <option value="Western Sahara">Western Sahara</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center hero-btns">
+                        <a class="main-btn nxt-btn default-next-btn">الخطوة التالية</a>
+                        <a class="main-btn nxt-btn payment-btn">الدفع</a>
+                        <button type="submit" class="submit-btn main-btn ">تأكيد</button>
+                        <a href="seller_account.html" class="transparent-btn cancel-btn">الرجوع</a>
+                        <a class="transparent-btn prev-btn">الرجوع</a>
+                        <a href="#" class="main-btn make_another_deal">انشاء عرض اخر</a>
+                        <a href="index.html" class="transparent-btn to_home_btn ">الرئيسية</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                    <div class="deal_step_two_img aqua">
+                      <div class="vector-box">
+                        <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                      </div>
+                      <div class="step-two-man-pic text-center ">
+                        <img src="images/delivery-concept-portrait-happy-african-american-delivery-man-blue-cloth-walking-send-box-package-customer-isolated-grey-studio-background-copy-space 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_two">
+                <ul class="steps-progress d-flex align-items-center">
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">1</span>
+                        <p class="progress-text">بيانات الشركة</p>
+                      </div>
+                    </li>
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">2</span>
+                        <p class="progress-text">عنوان الشركة</p>
+                      </div>
+                    </li>
+                    <li class="step-progress">
+                      <div>
+                        <span class="progress-bullet">3</span>
+                        <p class="progress-text">التواصل</p>
+                      </div>
+                    </li>
+                    <li class="step-progress">
+                      <div>
+                        <span class="progress-bullet">4</span>
+                        <p class="progress-text">اوراق شركتك</p>
+                      </div>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-12 mb-24">
+                                <span class="form-label">عنوان الشركة</span>
+                                <input type="text" class="form-control" value="شارع المريوطية المتفرع من شارع الهرم بالجيزة">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-24">
+                                <span class="form-label">الشارع</span>
+                                <input type="text" class="form-control" placeholder="الشارع">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-24">
+                                  <span class="form-label">رقم المبني</span>
+                                  <input type="text" class="form-control" placeholder="رقم المبني">
+                            </div>
+                            <div class="col-12 col-lg-6  mb-24">
+                                <span class="form-label">رقم الدور</span>
+                                <input type="text" class="form-control" placeholder="رقم الدور">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-24">
+                                <span class="form-label">علامة مميزة للعنوان (اختياري)</span>
+                                <input type="text" class="form-control" placeholder="علامة مميزة">
+                            </div>
+                            <div class="col-12 mb-24">
+                                  <span class="form-label">ملاحظات اخري (اختيار)</span>
+                                  <textarea class="form-control" placeholder="ملاحظات اخري"></textarea>
+                            </div>
+                            <div class="col-12 form-check special">
+                                  <input type="checkbox" class="form-check-input" id="saveAddress">
+                                  <label class="form-check-label" for="saveAddress">حفظ ذلك العنوان للاستخدام فيما بعد</label>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center hero-btns">
+                                <a class="main-btn nxt-btn default-next-btn">الخطوة التالية</a>
+                                <a class="main-btn nxt-btn payment-btn">الدفع</a>
+                                <button type="submit" class="submit-btn main-btn ">تأكيد</button>
+                                <a href="seller_account.html" class="transparent-btn cancel-btn">الرجوع</a>
+                                <a class="transparent-btn prev-btn">الرجوع</a>
+                                <a href="#" class="main-btn make_another_deal">انشاء عرض اخر</a>
+                                <a href="index.html" class="transparent-btn to_home_btn ">الرئيسية</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-none d-lg-block ">
+                        <div class="deal_step_two_img aqua">
+                          <div class="vector-box">
+                            <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                          </div>
+                          <div class="step-two-man-pic text-center ">
+                            <img src="images/payment-man.png" class="img-fluid " alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-step deal_step_three payment_step">
+                <ul class="steps-progress d-flex align-items-center">
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">1</span>
+                        <p class="progress-text">بيانات الشركة</p>
+                      </div>
+                    </li>
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">2</span>
+                        <p class="progress-text">عنوان الشركة</p>
+                      </div>
+                    </li>
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">3</span>
+                        <p class="progress-text">التواصل</p>
+                      </div>
+                    </li>
+                    <li class="step-progress">
+                      <div>
+                        <span class="progress-bullet">4</span>
+                        <p class="progress-text">اوراق شركتك</p>
+                      </div>
+                    </li>
+                </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_three_text">
+                    <div class="row">
+                        <span class="form-label">رقم تليفون المالك</span>
+                        <div class="col-12 mb-24" dir="ltr">
+                          <div class="input-group input-group-sm">
+                            <input id="mobile" type="tel" name="mobile" class="form-control" required>
+                          </div>
+                        </div>
+                        <span class="form-label">واتساب المالك</span>
+                        <div class="col-12 mb-24" dir="ltr">
+                          <div class="input-group input-group-sm">
+                            <input id="whats" type="tel" name="whats" class="form-control" required>
+                          </div>
+                        </div>
+                        <span class="form-label">رقم خدمة عملاء الشركة</span>
+                        <div class="col-12 mb-24" dir="ltr">
+                          <div class="input-group input-group-sm">
+                            <input id="service" type="tel" name="service" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="col-12 mb-24">
+                            <span class="form-label">اسم الموقع (اختيار)</span>
+                            <input type="text" class="form-control" placeholder="اسم موقع شركتك">
+                        </div>
+                        <div class="col-12 mb-24">
+                            <span class="form-label">الايميل الرسمي</span>
+                            <input type="text" class="form-control" placeholder="اسم موقع شركتك">
+                        </div>
+                        <div class="w-100 d-flex justify-content-center hero-btns">
+                            <a class="main-btn nxt-btn default-next-btn">الخطوة التالية</a>
+                            <button type="submit" class="submit-btn main-btn ">تسجيل الحساب</button>
+                            <a class="transparent-btn prev-btn">الرجوع</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img main">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/delivery-concept-smiling-handsome-caucasian-delivery-man-holding-paper-box 1.png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_four payment_step payment_step_four">
+                <ul class="steps-progress d-flex align-items-center">
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">1</span>
+                        <p class="progress-text">بيانات الشركة</p>
+                      </div>
+                    </li>
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">2</span>
+                        <p class="progress-text">عنوان الشركة</p>
+                      </div>
+                    </li>
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">3</span>
+                        <p class="progress-text">التواصل</p>
+                      </div>
+                    </li>
+                    <li class="step-progress active">
+                      <div>
+                        <span class="progress-bullet">4</span>
+                        <p class="progress-text">اوراق شركتك</p>
+                      </div>
+                    </li>
+                </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_three_text">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="form-label">انواع الاقسام المهتم بالاعلان فيها</span>
+                            <select class="form-select form-control" aria-label="Default select example">
+                              <option selected="">اختر نوع القسم</option>
+                              <option value="1">اختر نوع القسم</option>
+                              <option value="2">ثلاجة</option>
+                              <option value="3">ثلاجة</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <span class="form-label">الهوية الشخصية</span>
+                            <div class="position-relative form-control">
+                                <input type="file" id="identity-card-image" class="form-control d-none " accept="image/*">
+                                <label for="identity-card-image" role="button">ارفع صورة الهوية الشخصية</label>
+                                <div class="id_img position-absolute ">
+                                    <img src="images/id.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <span class="form-label">السجل التجاري</span>
+                            <div class="position-relative form-control">
+                              <input type="file" id="commercial-register-image" class="form-control d-none " accept="image/*">
+                              <label for="commercial-register-image" role="button">ارفع نسخة السجل التجاري</label>
+                              <div class="id_img position-absolute ">
+                                <img src="images/id.png" class="img-fluid " alt="">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <span class="form-label">البطاقة الضريبية</span>
+                            <div class="position-relative form-control">
+                              <input type="file" id="commercial-register-image" class="form-control d-none " accept="image/*">
+                              <label for="commercial-register-image" role="button">ارفع نسخة من البطاقة الضريبية</label>
+                              <div class="id_img position-absolute ">
+                                <img src="images/id.png" class="img-fluid " alt="">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <span class="form-label">كشف حساب بنكي (اختياري)</span>
+                            <div class="position-relative form-control">
+                              <input type="file" id="commercial-register-image" class="form-control d-none " accept="image/*">
+                              <label for="commercial-register-image" role="button">كشف حساب بنكي (اختياري)</label>
+                              <div class="id_img position-absolute ">
+                                <img src="images/id.png" class="img-fluid " alt="">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex justify-content-center hero-btns">
+                            <a class="main-btn nxt-btn default-next-btn">الخطوة التالية</a>
+                            <button type="submit" class="submit-btn main-btn ">تسجيل الحساب</button>
+                            <a class="transparent-btn prev-btn">الرجوع</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img main">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/front-view-delivery-man-holding-packages 1 (1).png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </form>
+    <div class="deal-successfully app_successfully" id="success-message">
+        <div class="success_deal text-center ">
+          <img src="images/Business deal-bro 1.png" class="img-fluid app-deal-success">
+        </div>
+        <h1>تم ارسال بياناتك بنجاح</h1>
+        <p>تم ارسال البيانات وسيتم مراجعتها من قبل فريق يلا بينا وسيتم بعدها التواصل معك في اقربوقت باذن الله</p>
+        <button class="main-btn">شكرا لك</button>
+    </div>
+    <div class="mobile_footer d-md-none ">
+      <div class="mobile_nav position-relative">
+        <svg width="100%" height="98" viewBox="0 0 430 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute z-1 ">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M370.966 17.0943C376.158 8.51344 383.97 0 394 0C413.882 0 430 16.1177 430 36V83C430 91.2843 423.284 98 415 98H15C6.71573 98 0 91.2843 0 83V36C0 16.1178 16.1177 0 36 0H280.733C294.809 0 305.806 12.5904 315.411 22.879C321.799 29.7219 330.9 34 341 34C353.708 34 364.834 27.2272 370.966 17.0943Z" fill="white"></path>
+        </svg>
+        <ul class="d-flex align-items-center justify-content-between text-center position-relative z-3 ">
+          <li><a href="index.html" class="active"><span><img src="images/home-2.png" alt=""></span><p>بيت</p></a></li>
+          <li><a href="search.html"><span><img src="images/search-normal.png" alt=""></span><p>بحث</p></a></li>
+          <li><a href="prefered_offers.html" class="hearted"><span><img src="images/navbar (2).png" alt=""></span><p>مفضل</p></a></li>
+          <li><a href="settings.html"><span><img src="images/user.png" alt=""></span><p>حساب تعريفي</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+    <!-- Shards-UI JS library -->
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    
+    <!-- Font Awesome & Bootstrap Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- intl-tel-input mobile country code UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="js/tele.js"></script>
+    <script>
+      const nextBtn = document.querySelectorAll(".nxt-btn");
+      const prev = document.querySelectorAll(".prev-btn");
+      const steps = document.querySelectorAll(".step-progress");
+      const form = document.querySelectorAll(".deal-step");
+      let active = 1;
+      const updateProgress = () => {
+        console.log('steps.length =>' + steps.length);
+        console.log('active =>' + active);
+
+        form.forEach((step, i) => {
+          if(i == (active -1)){
+            // step.classList.add("active");
+            form[i].classList.add("active");
+            console.log('i =>'+i);
+          } else{
+            // step.classList.remove("active");
+            form[i].classList.remove("active");
+          }
+        });
+      };
+      nextBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+        active++;
+        if(active > form.length){
+          active = form.length;
+        }
+        updateProgress();
+      })
+      })
+      prev.forEach((btn) =>{
+        btn.addEventListener('click', () => {
+        active--;
+        if(active < 1){
+          active = 1;
+        }
+        updateProgress();
+       })
+      })
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+    // Prevent default form submission behavior
+       event.preventDefault();
+    
+    // Simulate successful form submission
+    // You should replace this with your actual form submission code
+        let isFormSubmittedSuccessfully = true; // Change this based on your actual form submission result
+    
+        if (isFormSubmittedSuccessfully) {
+        // Show the success message div
+        console.log("done");
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("success-message").classList.add("success");
+        }
+      });
+      $(function () {
+          var code = "+11550408799"; // Assigning value from whats.
+          $('#service').val(code);
+          $('#service').intlTelInput({
+              autoHideDialCode: true,
+              autoPlaceholder: "ON",
+              dropdownContainer: document.body,
+              formatOnDisplay: true,
+            // hiddenInput: "full_number",
+              initialCountry: "eg",
+            //  nationalMode: true,
+              placeholderNumberType: "WHATS",
+              preferredCountries: ['us','gb','in'],
+              separateDialCode: true
+          });
+          $('#btn-submit').on('click', function () {
+              var code = $("#service").intlTelInput("getSelectedCountryData").dialCode;
+              var phoneNumber = $('#service').val();
+            //  $('#mobile').val(code+phoneNumber);
+              //  alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber );
+              document.getElementById("code").innerHTML = code;
+              document.getElementById("mobile-number").innerHTML = phoneNumber;
+          });
+      });
+    </script>
+
+  </body>
+</html>

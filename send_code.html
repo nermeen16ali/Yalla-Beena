@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تاكيد رقم الهاتف الخاص بك</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="register_header">
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            >
+            <img src="images/en-logo.png" class="img-fluid d-none d-lg-block " alt=""
+            />
+            <img src="images/res_logo.png" class="img-fluid d-lg-none " alt="">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close_mobile_menu d-lg-none bg-transparent border-0 ">
+              <img src="images/close.png" alt="">
+            </button>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">011 230 **** <img src="images/ic_baseline-call.png"> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الدعم الفني <img src="images/humbleicons_chat.png" alt=""> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >English</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid forget_form sign_form resend_form">
+      <div class="prev_page d-lg-none"><img src="images/back.png" clearfix img-fluid  alt=""></div>
+        <div class="row">
+            <form class="col-12 col-lg-6 myAccount_content">
+                <h4>تاكيد رقم الهاتف الخاص بك</h4>
+                <h6>لقد ارسلنا رمز تاكيد علي رقم الهاتف الخاص بك (010 33 143 ****) يرجي ادخال الرمز
+                    لتاكيد رقم الهاتف الخاص بك</h6>
+                  <div class="code-nums d-flex align-items-center" dir="ltr">
+                      <input type="number" class="code-num" placeholder="0" min="0" max="9" required="">
+                      <input type="number" class="code-num" placeholder="0" min="0" disabled="" max="9" required="">
+                      <input type="number" class="code-num" placeholder="1" min="0" disabled="" max="9" required="">
+                      <input type="number" class="code-num" placeholder="6" min="0" disabled="" max="9" required="">
+                  </div>
+                  <div class="resend">لم يصلك الرمز؟! 
+                    <button type="button" class=" bg-transparent border-0 ">إعادة الارسال في 38 ثانية</button>
+                  </div>
+                  <div class="col-12 ">
+                    <button class="main-btn w-100 " type="submit">تأكيد</button>
+                  </div>
+            </form>
+            <div class="col-12 col-lg-6 d-none d-lg-block ">
+                <div class="deal_step_two_img main">
+                  <div class="vector-box">
+                    <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                  </div>
+                  <div class="step-two-man-pic text-center position-relative ">
+                    <div class="humous-circle position-absolute d-flex justify-content-end ">
+                        <div class="inner_circle one">
+                            <img src="images/washer.png" class="img-fluid " alt="">
+                        </div>
+                        <div class="inner_circle two">
+                            <img src="images/lab.png" class="img-fluid " alt="">
+                        </div>
+                        <div class="inner_circle three">
+                            <img src="images/inner_circle.png" class="img-fluid " alt="">
+                        </div>
+                    </div>
+                    <img src="images/arabsstock_P29839_removebg 1.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const codes = document.querySelectorAll('.code-num');
+      codes[0].focus();
+                codes.forEach((input, index1) => {
+                    input.addEventListener("keyup", (e) => {
+                        const currentInput = input,
+                        nextInput = input.nextElementSibling,
+                        prevInput = input.previousElementSibling;
+                        if(currentInput.value.length > 1){
+                            currentInput.value = "";
+                            return;
+                        }
+                        if(nextInput && nextInput.hasAttribute("disabled") && currentInput.value !== ""){
+                            nextInput.removeAttribute("disabled");
+                            nextInput.focus();
+                        }
+                        if(e.key === "Backspace"){
+                            codes.forEach((input, index2) => {
+                                if(index1 <= index2 && prevInput){
+                                    input.setAttribute("disabled", true);
+                                    currentInput.value = "";
+                                    prevInput.focus();
+                                }
+                            })
+                        }
+                    })
+                })
+    </script>
+  </body>
+</html>

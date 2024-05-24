@@ -72,7 +72,6 @@ body{
     padding-inline-start: 100px;
     padding-inline-end: 100px;
     padding-block: 0;
-    /* overflow: hidden; */
 }
 h1{
     font-size: 48px;
@@ -511,7 +510,6 @@ header{
 }
 .products{
     padding-block-start: 70px;
-    /* padding-block-end: 135px; */
 }
 .viewall{
     color: var(--main-color);
@@ -604,10 +602,6 @@ header{
     color: var(--white-color);
     border-radius: 8px;
 }
-/* .fz-14-500{
-    font-size: 14px;
-    font-weight: 500;
-} */
 .minus{
     width: 16px;
 }
@@ -665,7 +659,6 @@ header{
 .slide-pic > img{
     margin: auto;
     position: relative;
-    /* inset-block-start: -70px; */
     display: block;
 }
 .slide-one .main-blue-btn{
@@ -724,7 +717,6 @@ header{
     -webkit-line-clamp: 1;
     line-clamp: 1 !important;
     -webkit-box-orient: vertical;
-    /* margin-block-start: -60px; */
     margin-block-end: 16px;
 }
 .dl_pg .slide-one .on svg use {
@@ -734,18 +726,12 @@ header{
     color: var(--text-color);
     font-size: 14px;
     font-weight: 500;
-    /* padding-inline-end: 8px; */
 }
 .slide-one .deal .inner{
     font-size: 14px;
     color: var(--writing-color);
     font-weight: 500;
 }
-/* .offer-price{
-    margin-block-end: 6px;
-    display: flex; align-items: center;
-    gap: 6px;
-} */
 .remainingtime{
     inset-block-start: 12px;
     inset-inline-start: 12px;
@@ -1125,9 +1111,6 @@ footer ul li::marker{
 .logos{
     margin-block-end: 66px;
 }
-/* .our-story{
-    margin-block-end: 125px;
-} */
 .ourstoryImg{
     inset-block-end: 0;
     inset-inline-start: 17px;
@@ -1302,9 +1285,6 @@ footer ul li::marker{
     border-color: var(--main-color);
     float: right;
 }
-/* .form-check .form-check-input{
-
-} */
 .deal-wrapper{
     padding-block-end: 30px;
 }
@@ -1320,21 +1300,7 @@ footer ul li::marker{
 }
 .deal-wrapper .deal-step{
     display: none;
-    /* --webkit-animation: fadeIn 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fadeIn 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both; */
 }
-/* @keyframes fadeIn {
-    0%{
-        opacity: 0;
-        --webkit-transform: translateY(10%);
-        transform: translateY(10%);
-    }
-    100%{
-        opacity: 1;
-        --webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-} */
 .deal-wrapper .deal-step.active{
     display: block;
 }
@@ -1383,9 +1349,6 @@ footer ul li::marker{
     display: block;
     margin-block-end: 8px;
 }
-/* .deal-step:not(.payment_step_three, .payment_step_four) .row > div:not(.commision-note){
-    margin-block-end: 24px;
-} */
 .form-control{
     padding-block: 16px;
     padding-inline: 14px;
@@ -1400,22 +1363,12 @@ footer ul li::marker{
     font-weight: 400;
     color: #96A3AE;
 }
-/* .form-control:focus{
-    box-shadow: none;
-    border-color: #20831E;
-} */
 .commission-text{
     font-size: 14px;
     font-weight: 500;
     color: var(--main-yellow-color);
     padding-block-start: 6px;
 }
-/* .form-control.green{
-    border: 1px solid #20831E;
-} */
-/* .form-control.green::placeholder, .form-select.green{
-   color: #20831E;
-} */
 form .form-select{
     background-position: left 8px center;
 }
@@ -1426,14 +1379,9 @@ form .form-select{
     gap: 20px;
 }
 .form-check .form-check-input:checked{
-    /* background-color: #20831E;
-    border-color: #20831E; */
     background-color: var(--main-color);
     box-shadow: none;
 }
-/* .form-check .form-check-input:checked + label{
-    color: #20831E;
-} */
 .form-check.form-control:has( .form-check-input:checked){
     border: 1px solid var(--main-color);
 }
@@ -1455,7 +1403,6 @@ form .form-select{
     font-weight: 500;
     color: #344054;
 }
-
 .product_details_partTwo{
     padding-block-start: 24px;
     padding-block-end: 24px;
@@ -1481,7 +1428,6 @@ form .form-select{
     padding-block: 24px;
 }
 .deal_step_two_img.aqua .vector-box{
-    /* background-color: rgba(60, 155, 175, 0.7); */
     background-color: rgba(44, 108, 120, 0.7);
 }
 .deal_step_two_img.main .vector-box{
@@ -1565,21 +1511,12 @@ form .form-select{
     font-weight: 700;
 
 }
-/* .deal_step_three:not(.payment_step_four) .deal_step_two_img{
-    margin-block-start: 82px;
-} */
 .form-check-step label{
     font-size: 16px;
     font-weight: 500;
     color: #3D3D3D;
     padding-inline-start: 0;
 }
-/* .form-check-step .form-check-input:checked{
-    background-color: var(--white-alt-color);
-    border-color: #2B8761;
-    background-image: url(../images/checked.png);
-    background-size: 10px;
-} */
 .form-check-input:checked{
     box-shadow: none;
 }
@@ -1607,7 +1544,6 @@ form .form-select{
 }
 .total-required.second_one .divider{
     height: 30px;
-    /* border-inline-start: 1px solid #B1B5D5; */
     width: 1px;
     background-color: #B1B5D5;
     margin-inline: 21px;
@@ -1708,9 +1644,6 @@ form .form-select{
     font-weight: 400;
     color: var(--text-color);
 }
-/* .account_content h6{
-    color: var(--writing-color);
-} */
 .sidebar_links{
     padding-block-start: 34px;
     padding-block-end: 116px;
@@ -1728,10 +1661,6 @@ form .form-select{
 .sidebar_link.active{
     color: var(--main-color);
 }
-/* .sidebar_link.active svg path, .sidebar_link:hover svg path{
-    color: var(--main-color);
-    stroke: var(--main-color);
-} */
 .setting_profile{
     width: 20px;
 }
@@ -1786,14 +1715,6 @@ form .form-select{
 .myAccount_content textarea.form-control{
     padding-inline-start: 18px;
 }
-/* .myAccount_content input.form-control.active{
-    border-color: #20831E;
-    color: #20831E;
-} */
-/* .myAccount_content input.form-control.password{
-    border-color: #F04438;
-    color: #F04438;
-} */
 .form-control.error{
     border-color: #F04438;
     color: #F04438;
@@ -1817,9 +1738,6 @@ form .form-select{
 .myAccount_content form{
     padding-block-start: 51px;
 }
-/* .myAccount_content form > div{
-    margin-block-end: 32px;
-} */
 .newAddress_list .form-check.form-control{
     height: unset;
     margin-block-end: 24px;
@@ -1883,12 +1801,6 @@ form .form-select{
     margin-block-start: 154px;
     gap: 20px;
 }
-/* .add_New_Address h6{
-    margin-block-end: 14px;
-} */
-/* .add_New_Address .form-label{
-    color: #5D686F;
-} */
 .form-control:focus{
     border-color: var(--main-color);
     box-shadow: none;
@@ -1899,12 +1811,6 @@ form .form-select{
 .add_New_Address .form-check{
     margin-block-start: 4px;
 }
-/* .add_New_Address .form-check-input:checked[type=checkbox]{
-    border: 1px solid #2B8761;
-    background-color: transparent;
-    background-image: url(../images/addAddress.png);
-    background-size: 10px;
-} */
 .transIcon{
     width: 58px;
     height: 50px;
@@ -2022,9 +1928,6 @@ form .form-select{
 .slide-one.closed-offer .prefered_offer_bottom{
     margin-block-start: 40px;
 }
-/* .offer_date{
-    margin-block-start: 24px;
-} */
 .preferedOfferIcon{
     width: 44px;
     height: 40px;
@@ -2192,9 +2095,6 @@ form .form-select{
     padding-inline: 0;
     width: 100%!important;
 }
-/* .support div:has( .active) > .form-label{
-    color: var(--writing-color);
-} */
 .support_footer{
     background-color: var(--main-color);
     padding-block: 28px;
@@ -2274,6 +2174,7 @@ form .form-select{
     width: 190px;
     margin-block-start: 12px;
     margin-block-end: 24px;
+    border-radius: 8px;
 }
 .application_deal_wrapper .wrapper-form-group{
     margin-block-end: 24px;
@@ -2298,18 +2199,12 @@ form textarea{
 .application_deal_wrapper .form-control:focus{
     border-color: var(--main-color);
 }
-/* .application_deal_wrapper .deal-step:not(.payment_step_three, .payment_step_four) .row > div:not(.commision-note) .form-check.special{
-    margin-block-start: 73px;
-    margin-block-end: 41px;
-} */
 .application_deal_wrapper .form-check label{
     font-size: 16px;
     font-weight: 500;
     color: #3D3D3D;
 }
-/* .application_deal_wrapper .form-check .form-check-input:checked + label{
-    color: var(--writing-color);
-} */
+
 .application_deal_wrapper textarea{
     height: 135px;
 }
@@ -2479,9 +2374,6 @@ select.form-control:not([size]):not([multiple]){
 .application_deal_wrapper.offer_subscribe:has( .deal_step_three.active) .hero-btns{
     margin-block-start: 181px;
 }
-/* .application_deal_wrapper.offer_subscribe .deal-step:not(.payment_step_three, .payment_step_four) .row > div:not(.commision-note) .form-check.special{
-    margin-block-start: 129px;
-} */
 .stepper_list li{
     font-size: 16px;
     font-weight: 500;
@@ -2524,9 +2416,6 @@ select.form-control:not([size]):not([multiple]){
 .sf_py{
     margin-block-end: 10px!important;
 }
-/* .deal-wrapper.offer_subscribe:has( .final_step.active) .default-next-btn{
-    display: none;
-} */
 .copied img{
     width: 24px;
 }
@@ -2555,9 +2444,6 @@ select.form-control:not([size]):not([multiple]){
 .deal-wrapper.offer_subscribe:has( .final_step.active) .submit-btn{
     display: block;
 }
-/* .offer_subscribe .deal-step.deal_step_four.payment_step_four.final_step .form-check-step{
-    margin-block-start: 285px;
-} */
 .final_step .step-two-man-pic img{
     width: 410px;
 }
@@ -2698,9 +2584,6 @@ div:not(.no_dl) .deal-successfully.success{
 .inner_circle.one {
     margin-block-start: -15px;
 }
-/* .login_form .myAccount_content .row > .col-12{
-    margin-block-end: 31px;
-} */
 .sign_form .myAccount_content > h4{
     color: #3F4D55;
     margin-block-end: 29px;
@@ -2792,33 +2675,10 @@ div:not(.no_dl) .deal-successfully.success{
 .myAccount_content .form-control.form-select{
     padding-inline-start:10px;
 }
-/* #loader img{
-    width: 281px;
-}
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f9f9f9;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  /* #loader {
-    animation: spin 2s linear infinite;
-  }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  } */
 .myAccount_content button[type="submit"]{
     width: 50%;
 }
 .mobile_nav{
-    /* background-image: url(../images/navBg.png); */
     padding-block-start: 20px;
     padding-block-end: 30px;
     padding-inline-start: 79px;
@@ -2975,37 +2835,6 @@ div:not(.no_dl) .deal-successfully.success{
 .depart_btns button:not(:last-child){
     margin-inline-end: 24px;
 }
-/* .pagination{
-
-} */
-/* .pagination .page-item .page-link{
-    font-size: 14px;
-    border-radius: 4px;
-    font-weight: 700;
-    color: #1C262D;
-    border: 1px solid #DFE3E8;
-    box-shadow: none;
-}
-.pagination .page-item.active .page-link{
-    border: 1px solid var(--main-blue-color);
-    color: var(--main-blue-color);
-    background-color: var(--white-color);
-}
-.pagination .page-item:hover .page-link{
-    background-color: rgba(84, 183, 203, 0.15);
-}
-.pagination .page-item.disabled svg path{
-    fill: rgba(196, 205, 213, 1) !important;
-}
-.pagination .page-item.highlighted .page-link{
-    border: 1px solid var(--main-color);
-}
-.pagination .page-item.highlighted .svg path{
-    fill: var(--main-color) !important;
-}
-.pagination .page-item.disabled .page-link{
-    background-color: rgba(93, 104, 111, 0.8);
-} */
 .search_page .account_sidebar h4{
     font-weight: 400;
     color: var(--writing-color);
@@ -3141,46 +2970,9 @@ div:not(.no_dl) .deal-successfully.success{
     align-items: center;
     gap: 8px;
   }
-  /* ul li {
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: center;
-    background-color: var(--white-color);
-  } */
   .dots {
     cursor: default;
   }
-  /* span {
-    display: block;
-  } */
-  /* .prev span,
-  .next span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  } */
-  /* span ion-icon {
-    font-size: 1.5rem;
-  } */
-  /* .prev,
-  .next {
-    background-color: violet;
-    padding: min(1.5rem, 1.5vw);
-  } */
-  
-  /* ul .prev {
-    border-radius: 25px 5px 5px 25px;
-  }
-  ul .next {
-    border-radius: 5px 25px 25px 5px;
-  } */
 .testimonials{
     font-size: 48px;
     font-weight: 500;
@@ -3241,12 +3033,6 @@ div:not(.no_dl) .deal-successfully.success{
     border: 1px solid #DFE3E8;
     cursor: pointer;
 }
-  /* ul .active,
-  ul .num:hover,
-  ul .btn:hover {
-    background-color: violet;
-    color: white;
-  } */
   
   #par {
     position: absolute;
@@ -3290,9 +3076,6 @@ div:not(.no_dl) .deal-successfully.success{
     font-size: 14px;
     font-weight: 500;
 }
-/* .brannnnd{
-    margin-block-start: -6px;
-} */
 .seller_deals{
     margin-block-end: 17px;
 }
@@ -3509,9 +3292,6 @@ textarea{
 .total-required > div span, .do_you_want span{
     display: inline;
 }
-/* .products{
-    margin-block-end: 30px;
-} */
 .products .slick-prev, .products .slick-next{
     inset-block-end: -70px;
 } 
@@ -3546,9 +3326,6 @@ select.form-control{
 .company_for_user .slide-one h4{
     margin-block-start: 120px;
 }
-/* .fnl_try {
-    margin-inline: unset;
-} */
 .reservedPeople img{
     width: 24px;
     height: 24px;
@@ -3804,7 +3581,6 @@ a:hover{
         width: 100%;
     }
     .navbar-brand{
-        /* max-width: 74px; */
         position: absolute;
         inset-inline-start: 50%;
         inset-block-start: 50%;
@@ -3841,15 +3617,9 @@ a:hover{
     .forget_form h6{
         margin-block-end: 48px;
     }
-    /* .forget_form .prev_page img{
-        margin-block-end: 31px;
-    } */
     .confirm_form .main-btn{
         margin-block-start: 55px;
     }
-    /* .confirm_form .prev_page img{
-        margin-block-end: 27px;
-    } */
     .sign_form.confirm_form .myAccount_content > h4{
         margin-block-end: 34px;
     }
@@ -3880,9 +3650,6 @@ a:hover{
     body:has( .mobile_nav){
         padding-block-end: 140px;
     }
-    /* .add_New_Address .btns{
-        margin-block-start: 0;
-    } */
     .account_content{
         padding-block-end: 0;
     }
@@ -3915,18 +3682,6 @@ a:hover{
     .offer_lists .searcharea{
         margin-block-start: 12px;
     }
-    /* .slide-pic h4{
-        font-size: 12px;
-    }
-    .slide-one .prefered_offer_bottom a.main-blue-btn{
-        font-size: 8.67px;
-    }
-    .product-owner{
-
-    }
-    .slide-one .deal .brand, .inner{
-        font-size: 7.67px;
-    } */
     .seller_account .main-blue-btn{
         width: 100%;
         display: block;
@@ -3957,7 +3712,6 @@ a:hover{
         padding-block: 13px;
     }
     .account_content h6{
-        /* font-size: 15px; */
         margin-block-end: 15px;
     }
     .seller_account p:first-of-type{
@@ -4052,12 +3806,6 @@ a:hover{
     .story-about .hero-text p{
         font-size: 12px;
     }
-    /* footer .footer-links > div{
-        width: unset;
-    } */
-    /* .news{
-        background-image: url(../images/home-appliance-with-ribbons-discounts-interior\ 1.png),  url(../images/home-appliance-with-ribbons-discounts-interior\ 2\ \(1\).png);
-    } */
     .search_page .account_sidebar {
         position: absolute;
         z-index: 9999;
@@ -4175,9 +3923,6 @@ a:hover{
     .reset_slide .slide-one-header{
         border-radius: 7.12px 7.12px 0px 0px;
     }
-    /* .reset_slide .sitem-content{
-        margin-block-start: 76px;
-    } */
     .reset_slide .slide-one-header{
         height: 95px;
     }
@@ -4208,9 +3953,6 @@ a:hover{
     .reset_slide .brand + span img{
         width: 16px;
     }
-    /* .reservedPeople{
-        display: block;
-    } */
     .reservedPeople img{
         width: 10px;
         height: 10px;
@@ -4250,12 +3992,6 @@ a:hover{
         padding-block: 3.56px;
         font-size: 5.13px;
     }
-    /* .brand + span:not(.inner){
-        margin-block-start: -6px;
-    } */
-    /* .slide-one .main-blue-btn .brannnnd{
-        margin-block-start: -3px;
-    } */
     .dl_pg .slide-one .prefered svg{
         width: max(22px, 22px);
         height: max(22px, 22px);
@@ -4318,7 +4054,6 @@ a:hover{
         font-size: 12px;
     }
     .dl_pg{
-        /* padding-block-start: 32px; */
         padding-block-end: 0;
     }
     .thumbnails_container{
@@ -4354,20 +4089,9 @@ a:hover{
     .dl_sr h6{
         font-size: 9.99px;
     }
-    /* .reset_slide .slide-pic > img{
-        position: absolute;
-        top: 90px;
-        transform: translateY(-50%);
-        width: 45px;
-        inset-inline-start: 50%;
-        transform: translate(50%, -50%);
-    } */
     .dl_slider .slide-pic > img{
         width: 140px;
     }
-    /* .dl_slider .slide-one-header{
-        height: 132px;
-    } */
     .deal_slide_one .main-blue-btn{
         font-size: 16px;
     }
@@ -4387,12 +4111,6 @@ a:hover{
     .products .slick-prev, .products .slick-next{
         inset-block-end: -70px;
     }
-    /* .slide-pic > img{
-        inset-block-start: -72px;
-    } */
-    /* .slide-pic h4{
-        margin-block-start: -45px;
-    } */
     .offers .viewall{
         padding-inline-start: 28px;
         font-size: 14px;
@@ -4425,9 +4143,6 @@ a:hover{
     .back-to-top img{
         width: 18px;
     }
-    /* .slide-pic > img.is_sl{
-        inset-block-start: -49px;
-    } */
     footer{
         margin-block-start: 20px;
     }
@@ -4532,9 +4247,6 @@ a:hover{
     .app_successfully .app-deal-success{
         max-width: 320px;
     }
-    /* .reset_slide .sitem-price{
-        margin-block-start: -5px;
-    } */
     .reset_slide .slide-one-header{
         padding-block: 21px;
     }
@@ -4948,13 +4660,6 @@ a:hover{
     .fnl_try_suc{
         padding-inline: 28px;
     }
-    /* .offer_status{
-        padding-block-end: 3px;
-        padding-block-start: 3px;
-        inset-block-start: 3px;
-        inset-inline-end: 3px;
-        font-size: 6px;
-    } */
     .your_offers span{
         display: inline;
     }
@@ -5045,9 +4750,6 @@ a:hover{
     .subscribe_btns .cancel-btn{
         margin-inline-start: 0;
     }
-    /* .deal-step .subscribe_divs{
-        justify-content: space-between;
-    } */
     .deal-step .subscribe_divs div{
         width: 100% !important;
         padding-inline: unset;
@@ -5060,9 +4762,6 @@ a:hover{
     .final_step_success .success_btns .alt-btn{
         border-radius: 8px;
     }
-    /* .story-about .container-fluid{
-        overflow: visible;
-    } */
     .about-section .line-text{
         margin-block-end: 28px;
     }
@@ -5139,10 +4838,6 @@ a:hover{
     .sitem-price, .dl_pg .ptimenum, .dl_pg .ptimenum + .smbtext{
         font-size: 14px;
     }
-    /* .featuredadvertisement img{
-        width: 16px;
-        margin-block-end: 4px;
-    } */
     .footer-links h4{
         font-size: 18px;
     }
@@ -5167,6 +4862,6 @@ a:hover{
         max-width: 265px;
     }
     .deal-wrapper .steps-progress{
-        padding-block-end: 0;
+        padding-block-end:25px;
     }
 }

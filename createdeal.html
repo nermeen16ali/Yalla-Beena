@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء عرض بيع</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/en-logo.png" class="img-fluid d-none d-lg-block" alt="">
+           <img src="images/res_logo.png" class="img-fluid d-lg-none " alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close_mobile_menu d-lg-none bg-transparent border-0 ">
+              <img src="images/close.png" alt="">
+            </button>
+            <ul class="navbar-nav">
+              <div class="sidebar_header d-flex align-items-center d-lg-none justify-content-between ">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="img-container">
+                    <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                  </div>
+                  <div class="sidebar_header_text">
+                    <span>مرحبا بـك</span>
+                    <h6>محمـد مصـطفـي عـلـي</h6>
+                  </div>
+                </div>
+                <div class="nav-item dropdown d-lg-none ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/langg.png" class="langg" alt="">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                    <li><a class="dropdown-item" href="#">عربي</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <img src="images/mobileHome.png" class="home_mobile d-lg-none " alt="">
+                  الرئيسية
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html">
+                  <img src="images/mobileYalla.png" class="home_mobile d-lg-none " alt="">
+                  يلا بينا ؟</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="companyForUser.html">
+                  <img src="images/mobileProduct.png" class="home_mobile d-lg-none " alt="">
+                  الاقسام
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offers_list.html">
+                  <img src="images/mobileDeals.png" class="home_mobile d-lg-none " alt="">
+                  قائمة العروض
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="specific_producr.html">
+                  <img src="images/mobileDemand.png" class="home_mobile d-lg-none " alt="">
+                  اطلب منتج محدد
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">
+                  <img src="images/contact-mail.png" class="home_contact d-lg-none " alt="">
+                  تواصل معنا
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <a href="#" class="log_out d-flex d-lg-none align-items-center ">
+                <img src="images/Sign-out.png" class="img-fluid " alt="">
+                <span>تســجــيل الخروج</span>
+              </a>
+              <a href="#" class="delete_account  d-flex d-lg-none ">
+                <img src="images/deleteAccount.png" class="img-fluid " alt="">
+                <span>حذف الحساب</span>
+              </a>
+              <a href="login.html" class="alt-btn d-none d-lg-block">
+                تسجيل الدخول
+              </a>
+              <a href="create_account.html" class="main-btn d-none d-lg-block">إنشاء حساب</a>
+            </div>
+          </div>
+          <div class="notif-icon d-lg-none " role="button">
+            <span><img src="images/header_not_mobile.png" class="img-fluid " alt="Vector"></span>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light second-nav d-none d-lg-block">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item searcharea">
+                <input type="text" placeholder="ابــحــث عن اي منتج هــنــا....">
+                <span class="position-absolute"></span>
+                <div class="search-icon">
+                  <img src="images/searchbox.png" class="img-fluid" alt="">
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  الاجهـزة الكـبـيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  الاجهـزة الـمنزلية الصغيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  اجهـزة الـمطبـخ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  العلامات التجارية
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="flag">
+                    <img src="images/Egypt.png" class="img-fluid" alt="">
+                  </div>
+                  <span>مصر</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">مصر</a></li>
+                  <li><a class="dropdown-item" href="#">كندا</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form action="" method="" class="deal-wrapper" id="myForm">
+        <div class="container-fluid no_dl">
+          <a href="story.html" class="prev_page d-lg-none"><img src="images/back.png" alt=""></a>
+            <h4>إنشاء عرض بيع</h4>
+            <div class="deal-step deal_step_one active">
+              <ul class="steps-progress d-flex align-items-center">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">تفاصيل المنتج</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">الشروط والاحكام</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">اختيار طريقة الدفع</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">الدفع والتاكيد</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="row product_details_partOne">
+                <div class="col-12 col-lg-6 mb-24">
+                  <span class="form-label">نوع المنتج</span>
+                  <select class="form-select form-control green" aria-label="Default select example">
+                    <option selected>ثلاجة</option>
+                    <option value="1">ثلاجة</option>
+                    <option value="2">ثلاجة</option>
+                    <option value="3">ثلاجة</option>
+                  </select>
+                </div>
+                <div class="col-12 col-lg-6 mb-24">
+                  <span class="form-label">الاسم الاعلان</span>
+                  <input class="form-control green" type="text" placeholder="ثلاجة سامسونج سمارت 16 قدم بتكنولوجيا سامسونج الحديثة" >
+                </div>
+                <span class="form-label">صور المنتج</span>
+                <div class="col-4 col-lg-2 ps-0 mb-24">
+                  <div class="companyLogo">
+                    <img src="images/Rectangle 34624433 (1).png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 ps-0 mb-24">
+                  <div class="companyLogo">
+                    <label for="company_logo1" role="button" class="upload-img d-flex flex-column align-items-center justify-content-center "><img src="images/uploadImg.png" class="img-fluid " alt=""><span>ارفاق صورة منتج</span></label>
+                    <input id="company_logo1" type="file" name="" class="d-none upload-product-img">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 ps-0 mb-24">
+                  <div class="companyLogo">
+                    <label for="company_logo2" role="button" class="upload-img d-flex flex-column align-items-center justify-content-center "><img src="images/uploadImg.png" class="img-fluid " alt=""><span>ارفاق صورة منتج</span></label>
+                    <input id="company_logo2" type="file" name="" class="d-none upload-product-img">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 ps-0 mb-24">
+                  <div class="companyLogo">
+                    <label for="company_logo3" role="button" class="upload-img d-flex flex-column align-items-center justify-content-center "><img src="images/uploadImg.png" class="img-fluid " alt=""><span>ارفاق صورة منتج</span></label>
+                    <input id="company_logo3" type="file" name="" class="d-none upload-product-img">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 ps-0 mb-24">
+                  <div class="companyLogo">
+                    <label for="company_logo4" role="button" class="upload-img d-flex flex-column align-items-center justify-content-center "><img src="images/uploadImg.png" class="img-fluid " alt=""><span>ارفاق صورة منتج</span></label>
+                    <input id="company_logo4" type="file" name="" class="d-none upload-product-img">
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 ps-0 mb-24">
+                  <div class="companyLogo">
+                    <label for="company_logo5" role="button" class="upload-img d-flex flex-column align-items-center justify-content-center "><img src="images/uploadImg.png" class="img-fluid " alt=""><span>ارفاق صورة منتج</span></label>
+                    <input id="company_logo5" type="file" name="" class="d-none upload-product-img">
+                  </div>
+                </div>
+                <div class="col-12 mb-24">
+                  <label class="form-label">تفاصيل المنتج</label>
+                  <textarea class="form-control" placeholder="تفاصيل المنتج.."></textarea>
+                </div>
+                <div class="col-12 col-lg-6 commision-note mb-24">
+                  <span class="form-label">سعر المنتج الاصلي طبقا لسعر السوق</span>
+                  <input class="form-control" type="number" placeholder="سعر المنتج الاصلي" >
+                </div>
+                <div class="col-12 col-lg-6 commision-note mb-24">
+                  <span class="form-label">السعر داخل العرض للمنتج الواحد</span>
+                  <input class="form-control" type="number" placeholder="سعر المنتج بعد الخصم" >
+                </div>
+                <div class="col-12 mb-24">
+                  <p class="commission-text">(ملحوظة) عمولة يلا بينا ستكون 2% من سعر المنتج الذي سيحددة التاجر وسيتم اضافة 2% اخري علي المشتري!</p>
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">سعر المنتج الذي سيتم ظهورة للعميل</span>
+                  <input disabled type="number" class="form-control " placeholder="22500 ج.م">
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">عمولة يلا بينا</span>
+                  <input disabled type="number" class="form-control " placeholder="2500 ج.م">
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">الباقي من سعر المنتج للتحصيل عند التوصيل</span>
+                  <input disabled type="number" class="form-control " placeholder="19600 ج.م">
+                </div>
+                <div class="col-12 col-lg-6 mb-24">
+                  <span class="form-label">مدة صلاحية العرض</span>
+                  <input type="number" class="form-control " placeholder="3 يوم">
+                  <span class="minimum">الحد الادني ثلاث (3) ايام</span>
+                </div>
+                <div class="col-12 col-lg-6 mb-24">
+                  <span class="form-label">عدد سنوات الضمان</span>
+                  <select class="form-select form-control">
+                    <option selected="">ثلاجة</option>
+                    <option value="1">ثلاجة</option>
+                    <option value="2">ثلاجة</option>
+                    <option value="3">ثلاجة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row product_details_partTwo">
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">عدد المنتجات داخل العرض</span>
+                  <input type="number" class="form-control " placeholder="1">
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">الحد الادني لعدد المنتجات لتنفيذ عملية البيع</span>
+                  <input type="number" class="form-control " placeholder="1">
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">العلامة التجارية للمنتج</span>
+                  <select class="form-select form-control">
+                    <option selected=""></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                  </select>
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">مميزات العرض</span>
+                  <input type="text" class="form-control " placeholder="اكتب الميزة">
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">مميزات العرض</span>
+                  <input type="text" class="form-control " placeholder="اكتب الميزة">
+                </div>
+                <div class="col-12 col-lg-4 mb-24">
+                  <span class="form-label">مميزات العرض</span>
+                  <input type="text" class="form-control " placeholder="اكتب الميزة">
+                </div>
+              </div>
+              <div class="row product_details_partThree">
+                <div class="col-12 col-lg-6 mb-24">
+                  <span class="form-label">
+                    هل العرض شامل الشحن والتركيب ؟
+                  </span>
+                  <div class="d-flex form-check-group">
+                    <div class="form-check w-50 form-control">
+                      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        نعم
+                      </label>
+                    </div>
+                    <div class="form-check w-50 form-control">
+                      <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        لا
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-24">
+                  <label class="form-label">ملاحظات عن الشحن و التركيب</label>
+                  <textarea class="form-control" placeholder="ملاحظات عن الشحن و التركيب"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_two">
+              <ul class="steps-progress d-flex align-items-center">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">تفاصيل المنتج</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">الشروط والاحكام</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">اختيار طريقة الدفع</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">الدفع والتاكيد</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_two_text">
+                    <h4>الشروط والاحكام الخاصة بمنصة يلا بينا</h4>
+                    <ul>
+                      <li>مسؤولية منصة يلا بينا تنتهي بعد التسليم</li>
+                      <li>لا يتم دفع قيمة المنتج الكاملة الا بعد التسليم</li>
+                      <li>إذا قام المستخدم بإلغاء الصفقة قبل انتهاء وقت الصفقة
+                        فسيتم استرداد كامل المبلغ في محفظته</li>
+                        <li>لدينا الحق في تمديد وقت الصفقة</li>
+                        <li>إذا قام البائع بإلغاء الصفقة لأي سبب من جانبه، فسيتم استرداد المبلغ بالكامل في محفظتك</li>
+                        <li>برجاء التأكد دائما من استلام الضمان الخاص بالجهاز عند استلام طلبكم</li>
+                        <li>الضمان والصيانه مسؤليه الموزع- الوكيل فقط , وليس لمنصه يلا بينا اي دخل بالصيانه او الضمان بعد انتهاء الصفقه</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img aqua">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/step-two-man.png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_three payment_step">
+              <ul class="steps-progress d-flex align-items-center">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">تفاصيل المنتج</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">الشروط والاحكام</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">اختيار طريقة الدفع</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">الدفع والتاكيد</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_three_text">
+                    <h4>اختر طريقة الدفع المناسبة لك</h4>
+                    <h4 class="second_heading">قيمة عرض الاعلان علي المنصة  (350 ج.م)</h4>
+                    <div class="form-check form-control ">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="viisa" checked>
+                      <label class="form-check-label" for="viisa">
+                        اختيار الفيزا كارد
+                      </label>
+                      <div class="check-imgs">
+                        <img src="images/pngegg (50) 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                    <div class="form-check form-control ">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="mbl">
+                      <label class="form-check-label" for="mbl">
+                        محافظ الموبايل
+                      </label>
+                      <div class="check-imgs">
+                        <img src="images/بواسطة موقع مصممين للخير (2).png" class="img-fluid " alt="">
+                        <img src="images/etisalat-cash-logo 1.png" class="img-fluid " alt="">
+                        <img src="images/1200x600wa 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                    <div class="form-check form-control ">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="fwry">
+                      <label class="form-check-label" for="fwry">
+                        اختيار فوري
+                      </label>
+                      <div class="check-imgs">
+                        <img src="images/20231126111012!فوري 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                    <div class="form-check form-control ">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="amman">
+                      <label class="form-check-label" for="amman">
+                        اختيار أمان
+                      </label>
+                      <div class="check-imgs">
+                        <img src="images/271428756_2741620679477517_8890691525730512036_n 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                    <div class="form-check form-control ">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="mhf">
+                      <label class="form-check-label" for="mhf">
+                        اختيار محفظة يلا بينا <span class="d-none d-lg-inline ">(رصيدك الان 1200 ج.م)</span>
+                      </label>
+                      <div class="check-imgs">
+                        <img src="images/Group 237707.png" class="img-fluid yallabeena-paymethod" alt="">
+                      </div>
+                    </div>
+                    <div class="do_you_want">
+                      <h5>هل تريد جعل اعلانك مميز في الصفحات الاولي والوصول الي اكبر
+                        عدد من الجمهور والمشاهدات ؟</h5>
+                        <p class="d-lg-flex align-items-center "><span>فقط مبلغ اضافي : </span><span> 100 ج.م</span> <span>لجعل اعلانك مميز </span></p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked0" checked>
+                          <label class="form-check-label" for="flexCheckChecked0">
+                            الموافقة علي جعل اعلاني مميز ودفع (100 ج.م)
+                          </label>
+                        </div>
+                    </div>
+                    <div class="total-required d-flex align-items-center ">
+                      <span>اجمالي المبلغ المطلوب:</span><span>500 ج.م</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img main">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/payment-man.png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_three payment_step payment_step_three">
+              <ul class="steps-progress d-flex align-items-center">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">تفاصيل المنتج</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">الشروط والاحكام</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">اختيار طريقة الدفع</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">الدفع والتاكيد</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_three_text row ">
+                    <h4>اختر طريقة الدفع المناسبة لك</h4>
+                    <h4 class="second_heading">قيمة عرض الاعلان علي المنصة (350 ج.م)</h4>
+                    <div class="form-check form-control col-12">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="vvvisa">
+                      <label class="form-check-label" for="vvvisa">
+                        اختيار الفيزا كارد
+                      </label>
+                      <div class="check-imgs">
+                        <img src="images/pngegg (50) 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                    <span class="form-label">رقم بطاقة الدفع</span>
+                    <div class="credit-card-inputs mb-24">
+                      <div class="credit-card-inputs__fields d-flex " dir="ltr">
+                        <input type="text" data-pos="4" class="form-control" placeholder="-- -- -- --">
+                        <input type="text" data-pos="3" class="form-control" placeholder="-- -- -- --">
+                        <input type="text" data-pos="2" class="form-control" placeholder="-- -- -- --">
+                        <input type="text" data-pos="1" class="form-control" placeholder="-- -- -- --">
+                      </div>
+                    </div>
+                    <div class="col-6 mb-24">
+                      <span class="form-label ">
+                        تاريخ انتهاء البطاقة
+                      </span>
+                      <input type="date" class="form-control " placeholder="تاريخ انتهاء البطاقة">
+                    </div>
+                    <div class="col-6 mb-24">
+                      <span class="form-label">الرقم السري (CVV)</span>
+                      <input type="password" class="form-control " placeholder="الرقم السري">
+                    </div>
+                    <div class="col-12 mb-16">
+                      <span class="form-label">الاسم علي البطاقة</span>
+                      <input type="text" class="form-control" placeholder="Mohamed Mustafa" dir="ltr">
+                    </div>
+                    <div class="col-12 mb-14">
+                      <img src="images/fi_3643948 (1).png" class="img-fluid safe_payment" alt=""> <span>دفع أمن 100%</span>
+                    </div>
+                    <div class="col-12 mb-16">
+                      <img src="images/Group 115.png" class="img-fluid " alt="">
+                      <img src="images/pngegg (50) 1.png" class="img-fluid " alt="">
+                      <img src="images/2560px-Stripe_Logo,_revised_2016 1.png" class="img-fluid " alt="">
+                      <img src="images/2560px-Mada_Logo 1.png" class="img-fluid " alt="">
+                    </div>
+                    <div class="row mb-32">
+                      <span class="form-label">هل لديك كود خصم ؟</span>
+                      <div class="col-8 col-lg-9">
+                        <input type="text" class="form-control" placeholder="HFD652Y" dir="ltr">
+                      </div>
+                      <div class="col-4 col-lg-3 pe-0">
+                        <button type="button" class="alt-main-btn w-100 en_cd">ادخال الكود</button>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-32">
+                      <div class="total-required second_one d-flex align-items-center ">
+                        <div class="align-items-center "><span>إجمالي المبلغ المطلوب:</span><span> 500 ج.م</span></div><div class="divider"></div><div class="align-items-center "><span>مبلغ الخصم:</span> <span>100 ج.م</span></div>
+                      </div>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="agreem" checked="">
+                      <label class="form-check-label" for="agreem">
+                        الموافقة علي الشروط والاحكام الخاصة بــيلا بينا
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img main">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/delivery-concept-smiling-handsome-caucasian-delivery-man-holding-paper-box 1.png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_four payment_step payment_step_four">
+              <ul class="steps-progress d-flex align-items-center">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">تفاصيل المنتج</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">الشروط والاحكام</p>
+                  </div>
+                </li>
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">اختيار طريقة الدفع</p>
+                  </div>
+                </li>
+                <li class="step-progress">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">الدفع والتاكيد</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_four_text">
+                    <h4>اختر طريقة الدفع المناسبة لك</h4>
+                    <span>الدفع عن طريق فوري</span>
+                    <div class="pay-imgs">
+                      <img src="images/fawry.png" class="img-fluid " alt="">
+                      <img src="images/amanpayment.png" class="img-fluid " alt="">
+                    </div>
+                    <p>الرقم المرجعي الخاص بماكينة فوري او امان</p>
+                    <div class="copy_area position-relative ">
+                      <input type="text" value="154754235413541" id="myInput" class="border-0 bg-transparent form-control">
+                      <span role="button" onclick="myFunction()" class="copied position-absolute "><img src="images/copy.png" alt=""></span>
+                    </div>
+                    <p class="warning">*لن يتم تاكيد الحجز الا بعد تاكيد الدفع عن طريق ماكينة فوري او امان</p>
+                    <div class="total-required d-flex align-items-center ">
+                      <span>إجمالي المبلغ المطلوب:</span><span> 500 ج.م</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img main">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/payment_four_man.png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="deal-successfully" id="success-message">
+              <ul class="steps-progress d-flex align-items-start ">
+                <li class="step-progress active ">
+                  <div>
+                    <span class="progress-bullet">1</span>
+                    <p class="progress-text">تفاصيل المنتج</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">2</span>
+                    <p class="progress-text">الشروط والاحكام</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">3</span>
+                    <p class="progress-text">اختيار طريقة الدفع</p>
+                  </div>
+                </li>
+                <li class="step-progress active">
+                  <div>
+                    <span class="progress-bullet">4</span>
+                    <p class="progress-text">الدفع والتاكيد</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="success_deal text-center ">
+                <img src="images/deal_success.png" class="img-fluid deal-success">
+              </div>
+              <h1>مبارك لك, تم إنشاء العرض</h1>
+              <p>تم إنشاء اعلانك بنجاح وسيتم المراجعة من قبل فريق يلا بينا وسيتم التواصل معك
+                شكرا لك لاستخدام منصة يلا بينا</p>
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center hero-btns">
+          <a class="main-btn nxt-btn default-next-btn">الخطوة التالية</a>
+          <a class="main-btn nxt-btn payment-btn">الدفع</a>
+          <button type="submit" class="submit-btn main-btn">تأكيد</button>
+          <a href="story.html" class="transparent-btn cancel-btn">الغاء</a>
+          <a class="transparent-btn prev-btn">الرجوع</a>
+          <a href="createdeal.html" class="main-btn make_another_deal">إنشاء عرض اخر</a>
+          <a href="index.html" class="transparent-btn to_home_btn ">الرئيسية</a>
+        </div>
+    </form>
+    <div class="mobile_footer d-md-none ">
+      <div class="mobile_nav position-relative">
+        <svg width="100%" height="98" viewBox="0 0 430 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute z-1 ">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M370.966 17.0943C376.158 8.51344 383.97 0 394 0C413.882 0 430 16.1177 430 36V83C430 91.2843 423.284 98 415 98H15C6.71573 98 0 91.2843 0 83V36C0 16.1178 16.1177 0 36 0H280.733C294.809 0 305.806 12.5904 315.411 22.879C321.799 29.7219 330.9 34 341 34C353.708 34 364.834 27.2272 370.966 17.0943Z" fill="white"></path>
+        </svg>
+        <ul class="d-flex align-items-center justify-content-between text-center position-relative z-3 ">
+          <li><a href="index.html" class="active"><span><img src="images/home-2.png" alt=""></span><p>بيت</p></a></li>
+          <li><a href="search.html"><span><img src="images/search-normal.png" alt=""></span><p>بحث</p></a></li>
+          <li><a href="prefered_offers.html" class="hearted"><span><img src="images/navbar (2).png" alt=""></span><p>مفضل</p></a></li>
+          <li><a href="settings.html"><span><img src="images/user.png" alt=""></span><p>حساب تعريفي</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const nextBtn = document.querySelectorAll(".nxt-btn");
+      const prev = document.querySelector(".prev-btn");
+      const steps = document.querySelectorAll(".step-progress");
+      const form = document.querySelectorAll(".deal-step");
+      let active = 1;
+      const updateProgress = () => {
+        console.log('steps.length =>' + steps.length);
+        console.log('active =>' + active);
+
+        form.forEach((step, i) => {
+          if(i == (active -1)){
+            // step.classList.add("active");
+            form[i].classList.add("active");
+            console.log('i =>'+i);
+          } else{
+            // step.classList.remove("active");
+            form[i].classList.remove("active");
+          }
+        });
+      };
+      nextBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+        active++;
+        if(active > form.length){
+          active = form.length;
+        }
+        updateProgress();
+      })
+      })
+      prev.addEventListener('click', () => {
+        active--;
+        if(active < 1){
+          active = 1;
+        }
+        updateProgress();
+      })
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+      // Prevent default form submission behavior
+       event.preventDefault();
+    
+      // Simulate successful form submission
+      // You should replace this with your actual form submission code
+      // For example, using AJAX to submit the form data to the server
+        let isFormSubmittedSuccessfully = true; // Change this based on your actual form submission result
+    
+        if (isFormSubmittedSuccessfully) {
+        // Show the success message div
+        console.log("done");
+        document.querySelectorAll(".deal-step").forEach(function(step){
+          step.style.display = "none";
+        })
+            document.getElementById("success-message").classList.add("success");
+        }
+      });
+      const result = [];
+
+      $(".credit-card-inputs input").on("input", (e) => {
+        const pos = $(e.target).data("pos");
+        const currentVal = $(e.target).val();
+
+        if (currentVal.length > 4) {
+          $(e.target).val(result[pos - 1]);
+          $(e.target).next().focus();
+          e.preventDefault();
+          return false;
+        }
+
+        result[pos - 1] = currentVal;
+
+        if (currentVal.length === 4) {
+          $(e.target).next().focus();
+        }
+
+        $("#credit_card_result").val(result.join(""));
+      });
+
+      $(".credit-card-inputs input").on("keydown", (e) => {
+        const pos = $(e.target).data("pos");
+
+        if (e.keyCode === 8) {
+          if ($(e.target).val().length === 0 && pos > 1) {
+            e.preventDefault();
+
+            let value = result[pos - 2] ? result[pos - 2].slice(0, -1) : "";
+            result[pos - 2] = value;
+            $(e.target).prev().focus().val(value);
+            $("#credit_card_result").val(result.join(""));
+          }
+        }
+
+        // prevent enter alphabetic keys
+        if (
+          $.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+          (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+          (e.keyCode >= 35 && e.keyCode <= 40)
+        ) {
+          return;
+        }
+        if (
+          (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) &&
+          (e.keyCode < 96 || e.keyCode > 105)
+        ) {
+          e.preventDefault();
+        }
+      });
+      function myFunction() {
+      // Get the text field
+      var copyText = document.getElementById("myInput");
+
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+    }
+    $('#vvvisa').on('change', function() {
+        if ($(this).is(':checked')) {
+        $('input[data-pos="4"]').focus();
+      }
+    });
+    </script>
+
+  </body>
+</html>

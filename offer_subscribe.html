@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>انشاء عرض بيع</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tele.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            >
+            <img src="images/en-logo.png" class="img-fluid d-none d-lg-block" alt=""
+            />
+           <img src="images/res_logo.png" class="img-fluid d-lg-none " alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close_mobile_menu d-lg-none bg-transparent border-0 ">
+              <img src="images/close.png" alt="">
+            </button>
+            <ul class="navbar-nav">
+              <div class="sidebar_header d-flex align-items-center d-lg-none justify-content-between ">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="img-container">
+                    <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                  </div>
+                  <div class="sidebar_header_text">
+                    <span>مرحبا بـك</span>
+                    <h6>محمـد مصـطفـي عـلـي</h6>
+                  </div>
+                </div>
+                <div class="nav-item dropdown d-lg-none ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/langg.png" class="langg" alt="">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                    <li><a class="dropdown-item" href="#">عربي</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <img src="images/mobileHome.png" class="home_mobile d-lg-none " alt="">
+                  الرئيسية
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html">
+                  <img src="images/mobileYalla.png" class="home_mobile d-lg-none " alt="">
+                  يلا بينا ؟</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="companyForUser.html">
+                  <img src="images/mobileProduct.png" class="home_mobile d-lg-none " alt="">
+                  الاقسام
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offers_list.html">
+                  <img src="images/mobileDeals.png" class="home_mobile d-lg-none " alt="">
+                  قائمة العروض
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="specific_producr.html">
+                  <img src="images/mobileDemand.png" class="home_mobile d-lg-none " alt="">
+                  اطلب منتج محدد
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">
+                  <img src="images/contact-mail.png" class="home_contact d-lg-none " alt="">
+                  تواصل معنا
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <a href="#" class="log_out d-flex d-lg-none align-items-center ">
+                <img src="images/Sign-out.png" class="img-fluid " alt="">
+                <span>تســجــيل الخروج</span>
+              </a>
+              <a href="#" class="delete_account  d-flex d-lg-none ">
+                <img src="images/deleteAccount.png" class="img-fluid " alt="">
+                <span>حذف الحساب</span>
+              </a>
+              <a href="login.html" class="alt-btn d-none d-lg-block">
+                تسجيل الدخول
+              </a>
+              <a href="create_account.html" class="main-btn d-none d-lg-block">إنشاء حساب</a>
+            </div>
+          </div>
+          <div class="notif-icon d-lg-none " role="button">
+            <span><img src="images/header_not_mobile.png" class="img-fluid " alt="Vector"></span>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light second-nav d-none d-lg-block">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item searcharea">
+                <input
+                  type="text"
+                  placeholder="ابــحــث عن اي منتج هــنــا...."
+                />
+                <span class="position-absolute"></span>
+                <div class="search-icon">
+                  <img src="images/searchbox.png" class="img-fluid" alt="" />
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الاجهـزة الكـبـيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الاجهـزة الـمنزلية الصغيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  اجهـزة الـمطبـخ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العلامات التجارية
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="flag">
+                    <img src="images/Egypt.png" class="img-fluid" alt="" />
+                  </div>
+                  <span>مصر</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">مصر</a></li>
+                  <li><a class="dropdown-item" href="#">كندا</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form class="deal-wrapper application_deal_wrapper offer_subscribe" id="myForm">
+        <div class="container-fluid">
+            <a href="settings.html" class="prev_page d-lg-none"><img src="images/back.png" class="img-fluid " alt=""></a>
+            <h4>الاشتراك في العرض</h4>
+            <div class="deal-step deal_step_one active">
+                <div class="subscribe_indicators">
+                    <p>البيانات الشخصية</p>
+                    <ul class="subscribe_progress d-flex align-items-center">
+                      <li class="subscribe_progress_step active "></li>
+                      <li class="subscribe_progress_step"></li>
+                      <li class="subscribe_progress_step"></li>
+                      <li class="subscribe_progress_step"></li>
+                      <li class="subscribe_progress_step"></li>
+                    </ul>
+                    <p>1 من 5</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row form-row">
+                            <div class="col-12 mb-24">
+                                <span class="form-label">الاسم بالكامل</span>
+                                <input type="text" class="form-control" value="محمد مصطفي علي">
+                            </div>
+                            <span class="form-label">رقم الهاتف</span>
+                            <div class="col-12 mb-24" dir="ltr">
+                              <div class="input-group input-group-sm">
+                                <input id="mobile" type="tel" name="mobile" class="form-control" required>
+                              </div>
+                            </div>
+                            <span class="form-label">رقم الواتساب</span>
+                            <div class="col-12 mb-24" dir="ltr">
+                              <div class="input-group input-group-sm">
+                                <input id="whats" type="tel" name="whats" class="form-control" required>
+                              </div>
+                            </div>
+                            <div class="col-12 mb-24">
+                                <span class="form-label ">عدد المنتجات</span>
+                                <input type="number" class="form-control " value="1">
+                            </div>
+                            <div class="subscribe_divs d-flex align-items-center ">
+                                <div class="aqua-btn">مبلغ جدية الحجز: 1500 ج.م</div>
+                                <div class="alt-yellow-btn">المبلغ المتبقي: 6800 ج.م</div>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center hero-btns">
+                                <a class="main-btn nxt-btn default-next-btn">التالي</a>
+                                <a class="main-btn nxt-btn payment-btn">الدفع</a>
+                                <button type="submit" class="submit-btn main-btn ">تأكيد</button>
+                                <a href="seller_account.html" class="transparent-btn cancel-btn">العودة</a>
+                                <a class="transparent-btn prev-btn">العودة</a>
+                                <a href="#" class="main-btn make_another_deal">انشاء عرض اخر</a>
+                                <a href="index.html" class="transparent-btn to_home_btn ">الرئيسية</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-none d-lg-block ">
+                        <div class="deal_step_two_img main">
+                          <div class="vector-box">
+                            <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                          </div>
+                          <div class="step-two-man-pic text-center ">
+                            <img src="images/fridge.png" class="img-fluid " alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-step deal_step_two">
+                <div class="subscribe_indicators">
+                    <p>عنوان التوصيل</p>
+                    <ul class="subscribe_progress d-flex align-items-center">
+                      <li class="subscribe_progress_step active "></li>
+                      <li class="subscribe_progress_step active"></li>
+                      <li class="subscribe_progress_step"></li>
+                      <li class="subscribe_progress_step"></li>
+                      <li class="subscribe_progress_step"></li>
+                    </ul>
+                    <p>1 من 5</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="row form-row">
+                            <div class="col-12 mb-24">
+                                <span class="form-label">عنوان التوصيل</span>
+                                <input type="text" class="form-control" value="شارع المريوطية المتفرع من شارع الهرم بالجيزة">
+                            </div>
+                            <div class="col-6 mb-24">
+                                <span class="form-label">الشارع</span>
+                                <input type="text" class="form-control" placeholder="الشارع">
+                            </div>
+                            <div class="col-6 mb-24">
+                                  <span class="form-label">رقم المنزل</span>
+                                  <input type="text" class="form-control" placeholder="رقم المنزل">
+                            </div>
+                            <div class="col-12 mb-24">
+                                <span class="form-label">علامة مميزة للعنوان (اختياري)</span>
+                                <input type="text" class="form-control" placeholder="علامة مميزة">
+                            </div>
+                            <div class="col-12 mb-24">
+                                  <span class="form-label">ملاحظات اخري (اختيار)</span>
+                                  <textarea class="form-control" placeholder="ملاحظات اخري"></textarea>
+                            </div>
+                            <div class="col-12 form-check special">
+                                  <input type="checkbox" class="form-check-input" id="subsaveAddress">
+                                  <label class="form-check-label" for="subsaveAddress">حفظ ذلك العنوان للاستخدام فيما بعد</label>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center hero-btns">
+                                <a class="main-btn nxt-btn default-next-btn">التالي</a>
+                                <a class="main-btn nxt-btn payment-btn">الدفع</a>
+                                <button type="submit" class="submit-btn main-btn ">تأكيد</button>
+                                <a href="seller_account.html" class="transparent-btn cancel-btn">العودة</a>
+                                <a class="transparent-btn prev-btn">العودة</a>
+                                <a href="#" class="main-btn make_another_deal">انشاء عرض اخر</a>
+                                <a href="index.html" class="transparent-btn to_home_btn ">الرئيسية</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-none d-lg-block ">
+                        <div class="deal_step_two_img aqua">
+                          <div class="vector-box">
+                            <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                          </div>
+                          <div class="step-two-man-pic text-center ">
+                            <img src="images/arabsstock_P29839_removebg 1.png" class="img-fluid " alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deal-step deal_step_three payment_step">
+              <div class="subscribe_indicators">
+                <p>اختر طريقة دفع عربون جدية الحجز</p>
+                <ul class="subscribe_progress d-flex align-items-center">
+                  <li class="subscribe_progress_step active "></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step"></li>
+                  <li class="subscribe_progress_step"></li>
+                </ul>
+                <p>1 من 5</p>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="subscribe_divs d-flex align-items-center ">
+                      <div class="aqua-btn">مبلغ جدية الحجز: 1500 ج.م</div>
+                      <div class="alt-yellow-btn">المبلغ المتبقي: 6800 ج.م</div>
+                    </div>
+                    <div class="deal_step_three_text">
+                      <div class="form-check form-control">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11" checked>
+                        <label class="form-check-label" for="flexRadioDefault11">
+                          اختيار الفيزا كارد
+                        </label>
+                        <div class="check-imgs">
+                          <img src="images/pngegg (50) 1.png" class="img-fluid " alt="">
+                        </div>
+                      </div>
+                      <div class="form-check form-control">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
+                        <label class="form-check-label" for="flexRadioDefault12">
+                          محافظ الموبايل
+                        </label>
+                        <div class="check-imgs">
+                          <img src="images/بواسطة موقع مصممين للخير (2).png" class="img-fluid " alt="">
+                          <img src="images/etisalat-cash-logo 1.png" class="img-fluid " alt="">
+                          <img src="images/1200x600wa 1.png" class="img-fluid " alt="">
+                        </div>
+                      </div>
+                      <div class="form-check form-control">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault13" >
+                        <label class="form-check-label" for="flexRadioDefault13">
+                          اختيار فوري
+                        </label>
+                        <div class="check-imgs">
+                          <img src="images/20231126111012!فوري 1.png" class="img-fluid " alt="">
+                        </div>
+                      </div>
+                      <div class="form-check form-control">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault14" >
+                        <label class="form-check-label" for="flexRadioDefault14">
+                          اختيار أمان
+                        </label>
+                        <div class="check-imgs">
+                          <img src="images/271428756_2741620679477517_8890691525730512036_n 1.png" class="img-fluid " alt="">
+                        </div>
+                      </div>
+                      <div class="form-check form-control">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault15">
+                        <label class="form-check-label" for="flexRadioDefault15">
+                          اختيار محفظة يلا بينا <span class="d-none d-lg-inline ">(رصيدك الان 1200 ج.م)</span>
+                        </label>
+                        <div class="check-imgs">
+                          <img src="images/Group 237707.png" class="img-fluid yallabeena-paymethod" alt="">
+                        </div>
+                      </div>
+                      <div class="w-100 d-flex justify-content-center hero-btns">
+                        <a class="main-btn nxt-btn default-next-btn">التالي</a>
+                        <button type="submit" class="submit-btn main-btn ">تسجيل الحساب</button>
+                        <a class="transparent-btn prev-btn">العودة</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 d-none d-lg-block ">
+                    <div class="deal_step_two_img main">
+                      <div class="vector-box">
+                        <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                      </div>
+                      <div class="step-two-man-pic text-center ">
+                        <img src="images/cheerful-guy-with-dark-hair-uses-mobile-phone-banking-card-making-shopping-online-orders-something-online-store-enters-information-does-secure-payment-isolated-yellow-background 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="deal-step deal_step_four payment_step payment_step_four first_step_four">
+                <div class="subscribe_indicators">
+                  <p>مسئوليات يلا بينا</p>
+                  <ul class="subscribe_progress d-flex align-items-center">
+                    <li class="subscribe_progress_step active "></li>
+                    <li class="subscribe_progress_step active"></li>
+                    <li class="subscribe_progress_step active"></li>
+                    <li class="subscribe_progress_step"></li>
+                    <li class="subscribe_progress_step"></li>
+                  </ul>
+                  <p>3 من 5</p>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-6 ">
+                    <div class="deal_step_two_text">
+                      <ul class="stepper_list">
+                        <li>مسؤولية منصة يلا بينا تنتهي بعد التسليم</li>
+                        <li>لا يتم دفع قيمة المنتج الكاملة الا بعد التسليم</li>
+                        <li>إذا قام المستخدم بإلغاء الصفقة قبل انتهاء وقت الصفقة
+                          فسيتم استرداد كامل المبلغ في محفظته</li>
+                          <li>لدينا الحق في تمديد وقت الصفقة</li>
+                          <li>إذا قام البائع بإلغاء الصفقة لأي سبب من جانبه، فسيتم استرداد المبلغ بالكامل في محفظتك</li>
+                          <li>برجاء التأكد دائما من استلام الضمان الخاص بالجهاز عند استلام طلبكم</li>
+                          <li>الضمان والصيانه مسؤليه الموزع- الوكيل فقط , وليس لمنصه يلا بينا اي دخل بالصيانه او الضمان بعد انتهاء الصفقه</li>
+                      </ul>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center hero-btns">
+                      <a class="main-btn nxt-btn default-next-btn">انهاء الدفع</a>
+                      <button type="submit" class="submit-btn main-btn ">تسجيل الحساب</button>
+                      <a class="transparent-btn prev-btn">العودة</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 d-none d-lg-block ">
+                    <div class="deal_step_two_img aqua">
+                      <div class="vector-box">
+                        <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                      </div>
+                      <div class="step-two-man-pic text-center ">
+                        <img src="images/smiling-handsome-man-holds-phone-thumbs-up-looking-isolated-white-wall 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="deal-step deal_step_four payment_step payment_step_four second_step_four">
+              <div class="subscribe_indicators">
+                <p>مسئوليات يلا بينا</p>
+                <ul class="subscribe_progress d-flex align-items-center">
+                  <li class="subscribe_progress_step active "></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step"></li>
+                </ul>
+                <p>3 من 5</p>
+              </div>
+                <div class="row">
+                  <div class="col-12 col-lg-6 ">
+                    <div class="deal_step_two_text row ">
+                      <p class="py_dt">تفاصيل الدفع</p>
+                      <div class="subscribe_divs d-flex align-items-center ">
+                        <div class="aqua-btn">مبلغ جدية الحجز: 1500 ج.م</div>
+                        <div class="alt-yellow-btn">المبلغ المتبقي: 6800 ج.م</div>
+                      </div>
+                      <div class="col-12">
+                        <span class="form-label">رقم بطاقة الدفع</span>
+                        <div class="credit-card-inputs" dir="ltr">
+                          <div class="credit-card-inputs__fields d-flex ">
+                            <input type="text" data-pos="1" class="form-control" placeholder="-- -- -- --" autofocus>
+                            <input type="text" data-pos="2" class="form-control" placeholder="-- -- -- --">
+                            <input type="text" data-pos="3" class="form-control" placeholder="-- -- -- --">
+                            <input type="text" data-pos="4" class="form-control" placeholder="-- -- -- --">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 mb-24">
+                        <span class="form-label ">
+                          تاريخ انتهاء البطاقة
+                        </span>
+                        <input type="date" class="form-control " placeholder="تاريخ انتهاء البطاقة">
+                      </div>
+                      <div class="col-6 mb-24">
+                        <span class="form-label">الرقم السري (CVV)</span>
+                        <input type="password" class="form-control " placeholder="الرقم السري">
+                      </div>
+                      <div class="col-12 mb-16">
+                        <span class="form-label">الاسم علي البطاقة</span>
+                        <input type="text" class="form-control" placeholder="Mohamed Mustafa" dir="ltr">
+                      </div>
+                      <div class="col-12 sf_py">
+                        <img src="images/fi_3643948 (1).png" class="img-fluid safe_payment" alt=""> <span>دفع أمن 100%</span>
+                      </div>
+                      <div class="col-12 mb-16">
+                        <img src="images/Group 115.png" class="img-fluid " alt="">
+                        <img src="images/pngegg (50) 1.png" class="img-fluid " alt="">
+                        <img src="images/2560px-Stripe_Logo,_revised_2016 1.png" class="img-fluid " alt="">
+                        <img src="images/2560px-Mada_Logo 1.png" class="img-fluid " alt="">
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked20" checked="">
+                        <label class="form-check-label" for="flexCheckChecked20">
+                          الموافقة علي الشروط والاحكام الخاصة بــيلا بينا
+                        </label>
+                      </div>
+                    </div>
+                    <div class="w-100 d-flex justify-content-center hero-btns">
+                      <a class="main-btn nxt-btn default-next-btn">انهاء الدفع</a>
+                      <button type="submit" class="submit-btn main-btn ">تسجيل الحساب</button>
+                      <a class="transparent-btn prev-btn">العودة</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 d-none d-lg-block ">
+                    <div class="deal_step_two_img main">
+                      <div class="vector-box">
+                        <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                      </div>
+                      <div class="step-two-man-pic text-center ">
+                        <img src="images/image-91584-taking-souvenir-s-through-mobile-phone-frontal-saudi-search_large-transformed 1.png" class="img-fluid " alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="deal-step deal_step_four payment_step payment_step_four second_step_four final_step">
+              <div class="subscribe_indicators">
+                <p>تفاصيل الدفع</p>
+                <ul class="subscribe_progress d-flex align-items-center">
+                  <li class="subscribe_progress_step active "></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step active"></li>
+                  <li class="subscribe_progress_step active"></li>
+                </ul>
+                <p>5 من 5</p>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="deal_step_four_text">
+                    <span class="py_dt">الدفع عن طريق فوري</span>
+                    <div class="pay-imgs">
+                      <img src="images/fawry.png" class="img-fluid " alt="">
+                      <img src="images/amanpayment.png" class="img-fluid " alt="">
+                    </div>
+                    <p>الرقم المرجعي الخاص بماكينة فوري او امان</p>
+                    <div class="copy_area position-relative ">
+                      <input type="text" value="154754235413541" id="myInput" class="border-0 bg-transparent form-control">
+                      <span role="button" onclick="myFunction()" class="copied position-absolute "><img src="images/copy.png" alt=""></span>
+                    </div>
+                    <p class="warning">*لن يتم تأكيد الحجز الا بعد تأكيد الدفع عن طريق ماكينة فوري او امان</p>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="final_step" checked="">
+                    <label class="form-check-label" for="final_step">
+                      الموافقة علي الشروط والاحكام الخاصة بــيلا بينا
+                    </label>
+                  </div>
+                  <div class="w-100 d-flex justify-content-center hero-btns finl_btns">
+                    <button type="submit" class="submit-btn main-btn ">تأكيد</button>
+                    <a class="transparent-btn prev-btn">العودة</a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 d-none d-lg-block ">
+                  <div class="deal_step_two_img main">
+                    <div class="vector-box">
+                      <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                    </div>
+                    <div class="step-two-man-pic text-center ">
+                      <img src="images/man-wearing-t-shirt-gesturing 1.png" class="img-fluid " alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </form>
+    <div class="deal-successfully app_successfully final_step_success fnl_try fnl_try_suc" id="success-message">
+        <div class="success_deal text-center ">
+          <img src="images/success-submit.png" class="img-fluid app-deal-success">
+        </div>
+        <h1>مبارك لك, تم الاشتراك بنجاح</h1>
+        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف</p>
+        <div class="alt-yellow-btn">المبلغ المتبقي: 6800 ج.م</div>
+        <div class="d-lg-flex success_btns">
+          <a href="#" class="alt-btn">
+            مشاركة العرض
+          </a>
+          <a href="index.html" class="main-btn"> العودة للرئيسية</a>
+        </div>
+    </div>
+    <div class="deal-successfully app_successfully final_step_success final_step_failure fnl_try" id="failure-message">
+      <div class="success_deal text-center failure_img">
+        <img src="images/failure_img.png" class="img-fluid app-deal-success">
+      </div>
+      <h1>فشل العملية</h1>
+      <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف</p>
+      <div class="d-lg-flex success_btns">
+        <a href="index.html" class="alt-btn">
+          الرئيسية
+        </a>
+        <a href="offer_subscribe.html" class="main-btn">محاولة مره اخري</a>
+      </div>
+    </div>
+    <div class="mobile_footer d-md-none ">
+      <div class="mobile_nav position-relative">
+        <svg width="100%" height="98" viewBox="0 0 430 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute z-1 ">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M370.966 17.0943C376.158 8.51344 383.97 0 394 0C413.882 0 430 16.1177 430 36V83C430 91.2843 423.284 98 415 98H15C6.71573 98 0 91.2843 0 83V36C0 16.1178 16.1177 0 36 0H280.733C294.809 0 305.806 12.5904 315.411 22.879C321.799 29.7219 330.9 34 341 34C353.708 34 364.834 27.2272 370.966 17.0943Z" fill="white"></path>
+        </svg>
+        <ul class="d-flex align-items-center justify-content-between text-center position-relative z-3 ">
+          <li><a href="index.html" class="active"><span><img src="images/home-2.png" alt=""></span><p>بيت</p></a></li>
+          <li><a href="search.html"><span><img src="images/search-normal.png" alt=""></span><p>بحث</p></a></li>
+          <li><a href="prefered_offers.html" class="hearted"><span><img src="images/navbar (2).png" alt=""></span><p>مفضل</p></a></li>
+          <li><a href="settings.html"><span><img src="images/user.png" alt=""></span><p>حساب تعريفي</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+    <!-- Shards-UI JS library -->
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    
+    <!-- Font Awesome & Bootstrap Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- intl-tel-input mobile country code UI -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const nextBtn = document.querySelectorAll(".nxt-btn");
+      const prev = document.querySelectorAll(".prev-btn");
+      const steps = document.querySelectorAll(".step-progress");
+      const form = document.querySelectorAll(".deal-step");
+      let active = 1;
+      const updateProgress = () => {
+        console.log('steps.length =>' + steps.length);
+        console.log('active =>' + active);
+
+        form.forEach((step, i) => {
+          if(i == (active -1)){
+            // step.classList.add("active");
+            form[i].classList.add("active");
+            console.log('i =>'+i);
+          } else{
+            // step.classList.remove("active");
+            form[i].classList.remove("active");
+          }
+        });
+      };
+      nextBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+        active++;
+        if(active > form.length){
+          active = form.length;
+        }
+        updateProgress();
+      })
+      })
+      prev.forEach((btn) =>{
+        btn.addEventListener('click', () => {
+        active--;
+        if(active < 1){
+          active = 1;
+        }
+        updateProgress();
+       })
+      })
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+    // Prevent default form submission behavior
+       event.preventDefault();
+    
+    // Simulate successful form submission
+    // You should replace this with your actual form submission code
+        let isFormSubmittedSuccessfully = false; // Change this based on your actual form submission result
+    
+        if (isFormSubmittedSuccessfully) {
+        // Show the success message div
+        console.log("done");
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("success-message").classList.add("success");
+        } else{
+          console.log("fail");
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("failure-message").classList.add("success");
+        }
+      });
+      const result = [];
+
+      $(".credit-card-inputs input").on("input", (e) => {
+        const pos = $(e.target).data("pos");
+        const currentVal = $(e.target).val();
+
+        if (currentVal.length > 4) {
+          $(e.target).val(result[pos - 1]);
+          $(e.target).next().focus();
+          e.preventDefault();
+          return false;
+        }
+
+        result[pos - 1] = currentVal;
+
+        if (currentVal.length === 4) {
+          $(e.target).next().focus();
+        }
+
+        $("#credit_card_result").val(result.join(""));
+      });
+
+      $(".credit-card-inputs input").on("keydown", (e) => {
+        const pos = $(e.target).data("pos");
+
+        if (e.keyCode === 8) {
+          if ($(e.target).val().length === 0 && pos > 1) {
+            e.preventDefault();
+
+            let value = result[pos - 2] ? result[pos - 2].slice(0, -1) : "";
+            result[pos - 2] = value;
+            $(e.target).prev().focus().val(value);
+            $("#credit_card_result").val(result.join(""));
+          }
+        }
+
+        // prevent enter alphabetic keys
+        if (
+          $.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+          (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+          (e.keyCode >= 35 && e.keyCode <= 40)
+        ) {
+          return;
+        }
+        if (
+          (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) &&
+          (e.keyCode < 96 || e.keyCode > 105)
+        ) {
+          e.preventDefault();
+        }
+      });
+      function myFunction() {
+      // Get the text field
+      var copyText = document.getElementById("myInput");
+
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+    };
+    $('input[data-pos="4"]').focus();
+    </script>
+    <script src="js/tele.js"></script>
+  </body>
+</html>

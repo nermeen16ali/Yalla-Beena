@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>يلا بينا - الدعم والتواصل</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            >
+            <img src="images/en-logo.png" class="img-fluid d-none d-lg-block" alt=""
+            />
+           <img src="images/res_logo.png" class="img-fluid d-lg-none " alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close_mobile_menu d-lg-none bg-transparent border-0 ">
+              <img src="images/close.png" alt="">
+            </button>
+            <ul class="navbar-nav">
+              <div class="sidebar_header d-flex align-items-center d-lg-none justify-content-between ">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="img-container">
+                    <img src="images/sidebar_owner.png" class="img-fluid " alt="">
+                  </div>
+                  <div class="sidebar_header_text">
+                    <span>مرحبا بـك</span>
+                    <h6>محمـد مصـطفـي عـلـي</h6>
+                  </div>
+                </div>
+                <div class="nav-item dropdown d-lg-none ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/langg.png" class="langg" alt="">
+                    English
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                    <li><a class="dropdown-item" href="#">عربي</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                  <img src="images/mobileHome.png" class="home_mobile d-lg-none " alt="">
+                  الرئيسية
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="story.html">
+                  <img src="images/mobileYalla.png" class="home_mobile d-lg-none " alt="">
+                  يلا بينا ؟</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="companyForUser.html">
+                  <img src="images/mobileProduct.png" class="home_mobile d-lg-none " alt="">
+                  الاقسام
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offers_list.html">
+                  <img src="images/mobileDeals.png" class="home_mobile d-lg-none " alt="">
+                  قائمة العروض
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="specific_producr.html">
+                  <img src="images/mobileDemand.png" class="home_mobile d-lg-none " alt="">
+                  اطلب منتج محدد
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact_us.html">
+                  <img src="images/contact-mail.png" class="home_contact d-lg-none " alt="">
+                  تواصل معنا
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <a href="#" class="log_out d-flex d-lg-none align-items-center ">
+                <img src="images/Sign-out.png" class="img-fluid " alt="">
+                <span>تســجــيل الخروج</span>
+              </a>
+              <a href="#" class="delete_account  d-flex d-lg-none ">
+                <img src="images/deleteAccount.png" class="img-fluid " alt="">
+                <span>حذف الحساب</span>
+              </a>
+              <a href="login.html" class="alt-btn d-none d-lg-block">
+                تسجيل الدخول
+              </a>
+              <a href="create_account.html" class="main-btn d-none d-lg-block">إنشاء حساب</a>
+            </div>
+          </div>
+          <div class="notif-icon d-lg-none " role="button">
+            <span><img src="images/header_not_mobile.png" class="img-fluid " alt="Vector"></span>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light second-nav d-none d-lg-block">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item searcharea">
+                <input
+                  type="text"
+                  placeholder="ابــحــث عن اي منتج هــنــا...."
+                />
+                <span class="position-absolute"></span>
+                <div class="search-icon">
+                  <img src="images/searchbox.png" class="img-fluid" alt="" />
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الاجهـزة الكـبـيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  الاجهـزة الـمنزلية الصغيرة
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  اجهـزة الـمطبـخ
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العلامات التجارية
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                  <li><a class="dropdown-item" href="#">أجهزة</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex nav-div">
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">انجليزي</a></li>
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                </ul>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="flag">
+                    <img src="images/Egypt.png" class="img-fluid" alt="" />
+                  </div>
+                  <span>مصر</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">مصر</a></li>
+                  <li><a class="dropdown-item" href="#">كندا</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid account_content myAccount_content">
+      <a href="settings.html" class="prev_page d-lg-none"><img src="images/back.png" alt=""></a>
+        <div class="deal-step deal_step_two support">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-between ">
+                    <p class="cotext">قائمة حسابك الجانبية</p>
+                    <h6>احصل علي الدعم</h6>
+                </div>
+                <form class="row ">
+                    <div class="col-12 mb-24">
+                        <span class="form-label">الاسم بالكامل</span>
+                        <div class="position-relative ">
+                            <input type="text" class="form-control " value="مـحمد مصطفي علي">
+                            <div class="svg-container position-absolute ">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.885 7.70726C8.94384 7.70726 9.86058 7.3275 10.6099 6.57823C11.3589 5.82909 11.7388 4.91247 11.7388 3.85351C11.7388 2.79492 11.359 1.87817 10.6097 1.12878C9.86046 0.37976 8.94372 0 7.885 0C6.82604 0 5.90942 0.37976 5.16028 1.1289C4.41113 1.87805 4.03125 2.79479 4.03125 3.85351C4.03125 4.91247 4.41113 5.82921 5.16028 6.57836C5.90966 7.32738 6.82641 7.70726 7.885 7.70726ZM5.82336 1.79187C6.39819 1.21704 7.0725 0.93762 7.885 0.93762C8.69738 0.93762 9.37182 1.21704 9.94677 1.79187C10.5216 2.36682 10.8011 3.04125 10.8011 3.85351C10.8011 4.66601 10.5216 5.34032 9.94677 5.91527C9.37182 6.49022 8.69738 6.76964 7.885 6.76964C7.07275 6.76964 6.39843 6.4901 5.82336 5.91527C5.24841 5.34044 4.96887 4.66601 4.96887 3.85351C4.96887 3.04125 5.24841 2.36682 5.82336 1.79187Z" fill="#5D686F"></path>
+                                    <path d="M14.629 12.3032C14.6074 11.9914 14.5637 11.6514 14.4994 11.2922C14.4344 10.9304 14.3508 10.5884 14.2507 10.2758C14.1472 9.95263 14.0067 9.63354 13.8327 9.32776C13.6524 9.01037 13.4405 8.73401 13.2027 8.50659C12.9541 8.26868 12.6496 8.07739 12.2976 7.93787C11.9468 7.79907 11.558 7.72876 11.1421 7.72876C10.9787 7.72876 10.8208 7.79578 10.5157 7.99438C10.328 8.11682 10.1084 8.25842 9.86327 8.41504C9.65367 8.54858 9.36974 8.6737 9.01903 8.78699C8.67687 8.8977 8.32945 8.95386 7.98644 8.95386C7.64366 8.95386 7.29625 8.8977 6.95385 8.78699C6.60351 8.67383 6.31945 8.5487 6.11022 8.41516C5.86742 8.26001 5.6477 8.11841 5.45715 7.99426C5.15234 7.79565 4.99438 7.72864 4.83105 7.72864C4.41503 7.72864 4.02636 7.79907 3.67565 7.93799C3.32385 8.07727 3.01928 8.26855 2.77038 8.50671C2.53259 8.73425 2.32068 9.0105 2.1405 9.32776C1.9668 9.63354 1.82617 9.95251 1.72266 10.2759C1.62268 10.5885 1.53906 10.9304 1.47412 11.2922C1.40967 11.6509 1.36609 11.9911 1.34448 12.3036C1.32324 12.6091 1.3125 12.9271 1.3125 13.2484C1.3125 14.0836 1.578 14.7598 2.10156 15.2584C2.61865 15.7505 3.30273 16 4.13488 16H11.839C12.6709 16 13.355 15.7505 13.8722 15.2584C14.3958 14.7601 14.6614 14.0837 14.6614 13.2483C14.6612 12.9259 14.6504 12.6079 14.629 12.3032ZM13.2257 14.5791C12.884 14.9043 12.4304 15.0624 11.8388 15.0624H4.13488C3.54321 15.0624 3.0896 14.9043 2.74804 14.5792C2.41296 14.2602 2.25012 13.8248 2.25012 13.2484C2.25012 12.9486 2.26001 12.6526 2.27978 12.3684C2.29907 12.0896 2.3385 11.7833 2.39697 11.4579C2.45471 11.1365 2.5282 10.8348 2.6156 10.5618C2.69946 10.2999 2.81384 10.0406 2.95569 9.79089C3.09106 9.55285 3.24682 9.34863 3.4187 9.18408C3.57946 9.03015 3.7821 8.90417 4.02087 8.80969C4.24169 8.72229 4.48986 8.67444 4.75927 8.66723C4.79211 8.68469 4.85058 8.71802 4.94531 8.77978C5.13805 8.90539 5.36022 9.0487 5.60583 9.20556C5.88268 9.38208 6.23937 9.5415 6.66552 9.67907C7.10119 9.81994 7.54552 9.89148 7.98656 9.89148C8.4276 9.89148 8.87206 9.81994 9.30748 9.6792C9.73399 9.54138 10.0906 9.38208 10.3678 9.20532C10.6191 9.04468 10.8351 8.90552 11.0278 8.77978C11.1225 8.71814 11.181 8.68469 11.2138 8.66723C11.4834 8.67444 11.7315 8.72229 11.9525 8.80969C12.1911 8.90417 12.3938 9.03027 12.5545 9.18408C12.7264 9.34851 12.8822 9.55273 13.0176 9.79101C13.1595 10.0406 13.274 10.3 13.3578 10.5616C13.4453 10.8351 13.5189 11.1366 13.5765 11.4578C13.6349 11.7838 13.6744 12.0902 13.6937 12.3685V12.3688C13.7136 12.6518 13.7236 12.9477 13.7237 13.2484C13.7236 13.8249 13.5608 14.2602 13.2257 14.5791Z" fill="#5D686F"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-24">
+                        <span class="form-label">رقم الهاتف</span>
+                        <div class="position-relative ">
+                            <input type="text" class="form-control" placeholder="اكتب رقم الهاتف هنا...">
+                            <div class="svg-container position-absolute ">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2302_20005)">
+                                    <path d="M11.5146 16C8.70972 16 5.71444 14.9693 3.3725 12.6275C1.03447 10.2894 0 7.29613 0 4.48541C0 2.00825 2.00413 0 4.48541 0C4.67709 0 4.84944 0.116687 4.92063 0.294656L6.92897 5.3155C7.02513 5.55587 6.90822 5.82866 6.66787 5.92481L4.46172 6.80725C4.61778 9.34531 6.65509 11.3825 9.19275 11.5383L10.0752 9.33219C10.1712 9.09222 10.4438 8.97487 10.6845 9.07106L15.7053 11.0794C15.8833 11.1506 16 11.3229 16 11.5146C16 13.9918 13.9959 16 11.5146 16ZM4.17344 0.950938C2.37819 1.10628 0.9375 2.61172 0.9375 4.48541C0.9375 7.31066 2.03769 9.96681 4.03544 11.9645C6.03316 13.9623 8.68931 15.0625 11.5146 15.0625C13.3877 15.0625 14.8936 13.6226 15.0491 11.8266L10.7716 10.1156L9.94147 12.1908C9.87031 12.3687 9.69794 12.4854 9.50625 12.4854C6.20222 12.4854 3.51459 9.79778 3.51459 6.49425C3.51459 6.30259 3.63128 6.12969 3.80925 6.05853L5.88444 5.22844L4.17344 0.950938Z" fill="#5D686F"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2302_20005">
+                                    <rect width="16" height="16" fill="white"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-24">
+                        <span class="form-label">البريد الالكتروني</span>
+                        <div class="position-relative ">
+                            <input type="text" class="form-control" placeholder="اكتب البريد هنا...">
+                            <div class="svg-container position-absolute ">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3346 4.99998C18.3346 4.08331 17.5846 3.33331 16.668 3.33331H3.33464C2.41797 3.33331 1.66797 4.08331 1.66797 4.99998M18.3346 4.99998V15C18.3346 15.9166 17.5846 16.6666 16.668 16.6666H3.33464C2.41797 16.6666 1.66797 15.9166 1.66797 15V4.99998M18.3346 4.99998L10.0013 10.8333L1.66797 4.99998" stroke="#5D686F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-24">
+                        <span class="form-label">سبب التواصل</span>
+                        <textarea class="form-control" placeholder="نبذة عن سبب التواصل او طلب الدعم"></textarea>
+                    </div>
+                    <div class="d-flex align-items-center support_btns">
+                        <button type="submit" class="main-btn">إرسال</button>
+                        <a href="https://api.whatsapp.com/send?phone=01111104846" class="whats_btn"><img src="images/whatsIcon.png" class="img-fluid whatIcon" alt=""><span>راسلنا علي الواتساب</span></a>
+                    </div>
+                </form>
+              </div>
+              <div class="col-12 col-lg-6 d-none d-lg-block ">
+                <div class="deal_step_two_img aqua">
+                  <div class="vector-box">
+                    <img src="images/step-two-vector.png" class="img-fluid " alt="">
+                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص</p>
+                  </div>
+                  <div class="step-two-man-pic text-center ">
+                    <img src="images/man 1.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="support_footer d-none d-lg-block">
+        <ul class="container-fluid d-flex align-items-center justify-content-end ">
+            <li>
+                <a href="mailto:Yallbeenamail@gmail.com" target="_blank" class="mail_btn"><span>Yallbeenamail@gmail.com</span><img src="images/mailSupport.png" class="mailIcon" alt=""></a>
+            </li>
+            <li>
+                <a href="mailto:Yallbeenamail@gmail.com" target="_blank" class="mail_btn"><span>Yallbeenamail@gmail.com</span> <img src="images/mailSupport.png" class="mailIcon" alt=""></a>
+            </li>
+            <li>
+                <a href="tel:011230****"><span>011 230 ****</span> <img src="images/telephoneSupport.png" class="teleIcon" alt=""></a>
+            </li>
+            <li>
+                <a href="tel:011230****"><span>011 230 ****</span><img src="images/telephoneSupport.png" class="teleIcon" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <div class="mobile_footer d-md-none ">
+      <div class="mobile_nav position-relative">
+        <svg width="100%" height="98" viewBox="0 0 430 98" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute z-1 ">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M370.966 17.0943C376.158 8.51344 383.97 0 394 0C413.882 0 430 16.1177 430 36V83C430 91.2843 423.284 98 415 98H15C6.71573 98 0 91.2843 0 83V36C0 16.1178 16.1177 0 36 0H280.733C294.809 0 305.806 12.5904 315.411 22.879C321.799 29.7219 330.9 34 341 34C353.708 34 364.834 27.2272 370.966 17.0943Z" fill="white"></path>
+        </svg>
+        <ul class="d-flex align-items-center justify-content-between text-center position-relative z-3 ">
+          <li><a href="index.html" class="active"><span><img src="images/home-2.png" alt=""></span><p>بيت</p></a></li>
+          <li><a href="search.html"><span><img src="images/search-normal.png" alt=""></span><p>بحث</p></a></li>
+          <li><a href="prefered_offers.html" class="hearted"><span><img src="images/navbar (2).png" alt=""></span><p>مفضل</p></a></li>
+          <li><a href="settings.html"><span><img src="images/user.png" alt=""></span><p>حساب تعريفي</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
